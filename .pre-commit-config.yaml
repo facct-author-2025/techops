@@ -1,0 +1,36 @@
+---
+minimum_pre_commit_version: 1.21.0
+fail_fast: true
+default_stages: [ pre-commit ]
+repos:
+
+  - repo: https://github.com/adrienverge/yamllint
+    rev: v1.26.3
+    hooks:
+      - id: yamllint
+        args: [ "--strict", "-d", "{rules: {line-length: {max: 180}}}" ]
+        #
+
+  # miscellaneous
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.2.0
+    hooks:
+      - id: check-added-large-files
+        args: ['--maxkb=1024']
+      - id: check-yaml
+        args: [--unsafe]
+      - id: detect-private-key
+      - id: mixed-line-ending
+
+  # security
+
+  - repo: local
+    hooks:
+      - id: safety
+        name: safety
+        entry: safety
+        language: system
+        pass_filenames: false
+        args: [ "check", "--full-report", "--ignore", "51457"]
+        stages: [ pre-push ]
