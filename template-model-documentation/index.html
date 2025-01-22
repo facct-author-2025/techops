@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Model Documentation Template - techops</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Model Documentation Template";
+    var mkdocs_page_input_path = "template-model-documentation.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> techops</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="tocbase current">
+    
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">GETTING STARTED</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="..">Home</a>
+  </li>
+        
+      </ul>
+    </li>
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">TEMPLATES</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../template-application-documentation/">Application Documentation Template</a>
+  </li>
+        
+          
+
+
+  
+    
+    <li class="navtree toctree-l2 page current">
+      <a class="current" href="./">
+        Model Documentation Template
+          <span class="toctree-expand"></span>
+      </a>
+    </li>
+    
+      
+
+
+
+  <li class="toctree-l2 current">
+    <ul class="subnav-l2 current">
+    
+      
+          
+
+  <li class="toctree-l3 current with-children">
+    <a href="#overview">
+      Overview
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3 current">
+    <ul class="subnav-l3 current">
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#model-type">Model Type</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#model-description">Model Description</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#status">Status</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#relevant-links">Relevant Links</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#developers">Developers</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#owner">Owner</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#version-details-and-artifacts">Version Details and Artifacts</a>
+        </li>
+    
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#intended-and-known-usage">
+      Intended and Known Usage
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#intended-use">Intended Use</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#domains-of-use">Domain(s) of use</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#out-of-scope-uses">Out Of Scope Uses</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#known-applications">Known Applications</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#model-architecture">
+      Model Architecture
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#data-collection-and-preprocessing">Data Collection and Preprocessing</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#data-splitting">Data Splitting</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#model-training-process">Model Training Process</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#model-validation">Model Validation:</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#performance-metrics">Performance Metrics</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#model-testing">
+      Model Testing
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#technical-processes">Technical Processes</a>
+        </li>
+    
+      
+          
+
+  <li class="toctree-l4">
+    <a href="#model-bias-and-fairness-analysis">
+      Model Bias and Fairness Analysis
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l4">
+    <ul class="subnav-l4 toc-hidden">
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#bias-detection-methods-used">Bias Detection Methods Used</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#mitigation-measures">Mitigation Measures</a>
+        </li>
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#retraining-approaches">Retraining approaches</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#post-processing-techniques">Post-Processing Techniques</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#model-interpretability-and-explainability">Model Interpretability and Explainability</a>
+        </li>
+    
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#documentation-metadata">
+      Documentation Metadata
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#version">Version</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#template-version">Template Version</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#documentation-authors">Documentation Authors</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+    </ul>
+  </li>
+
+
+  
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../template-data-documentation/">Data Documentation Template</a>
+  </li>
+        
+      </ul>
+    </li>
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">EXAMPLES</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../example-model-documentation-alisnet/">ALiSNet Model Documentation</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../example-data-documentation-voc-skin-tones/">Skin Tones Data Documentation</a>
+  </li>
+        
+      </ul>
+    </li>
+    
+  </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">techops</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>TEMPLATES &raquo;</li>
+        
+      
+    
+    <li>Model Documentation Template</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="model-documentation-template">Model Documentation Template<a class="headerlink" href="#model-documentation-template" title="Permanent link">&para;</a></h1>
+<!-- info: Replace with model name -->
+
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<h3 id="model-type">Model Type<a class="headerlink" href="#model-type" title="Permanent link">&para;</a></h3>
+<p><strong>Model Type:</strong> (e.g., Neural Networks, Decision Trees, etc.)</p>
+<h3 id="model-description">Model Description<a class="headerlink" href="#model-description" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Description</li>
+</ul>
+<!-- info: Brief (max 200 words) description of the model architecture and the task(s) it was trained to solve. -->
+
+<h3 id="status">Status<a class="headerlink" href="#status" title="Permanent link">&para;</a></h3>
+<!-- scope: telescope -->
+<!-- info: Select **one:** -->
+<p><strong>Status Date:</strong> YYYY-MM-DD</p>
+<p><strong>Status:</strong> <em>specify one of</em>:</p>
+<ul>
+<li><strong>Under Preparation</strong> &ndash; The model is still under active development and is not yet ready for use due to active &ldquo;dev&rdquo; updates.</li>
+<li><strong>Regularly Updated</strong> &ndash; New versions of the model have been or will continue to be made available.</li>
+<li><strong>Actively Maintained</strong> &ndash; No new versions will be made available, but this model will be actively maintained.</li>
+<li><strong>Limited Maintenance</strong> &ndash; The model will not be updated, but any technical issues will be addressed.</li>
+<li><strong>Deprecated</strong> &ndash; This model is obsolete or is no longer being maintained.</li>
+</ul>
+<h3 id="relevant-links">Relevant Links<a class="headerlink" href="#relevant-links" title="Permanent link">&para;</a></h3>
+<!-- info: User studies show document users find quick access to relevant artefacts like papers, model demos, etc..
+very useful. -->
+
+<p>Example references:</p>
+<ul>
+<li>GitHub Repository</li>
+<li>Paper/Documentation Link</li>
+<li>Initiative Demo</li>
+<li>Conference Talk</li>
+<li>API Link</li>
+</ul>
+<h3 id="developers">Developers<a class="headerlink" href="#developers" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Name, Team</strong></li>
+<li><strong>Name, Team</strong></li>
+</ul>
+<h3 id="owner">Owner<a class="headerlink" href="#owner" title="Permanent link">&para;</a></h3>
+<!-- info: Remember to reference developers and owners emails. -->
+<ul>
+<li><strong>Team Name, Contact Person</strong></li>
+</ul>
+<h2 id="version-details-and-artifacts">Version Details and Artifacts<a class="headerlink" href="#version-details-and-artifacts" title="Permanent link">&para;</a></h2>
+<!-- scope: periscope -->
+<!-- info: Provide details about the current model version
+and which model version the current model card corresponds to.
+
+For models without version number, use "Not currently tracked"
+but be sure to track the release date of the model.
+-->
+<p><strong>Current Model Version:</strong></p>
+<p><strong>Model Version Release Date:</strong></p>
+<p><strong>Model Version at last Model Documentation Update:</strong></p>
+<p><strong>Artifacts:</strong></p>
+<ul>
+<li>Model weights (e.g. S3 bucket path)</li>
+<li>Model config (e.g. S3 bucket path)</li>
+</ul>
+<h2 id="intended-and-known-usage">Intended and Known Usage<a class="headerlink" href="#intended-and-known-usage" title="Permanent link">&para;</a></h2>
+<h3 id="intended-use">Intended Use<a class="headerlink" href="#intended-use" title="Permanent link">&para;</a></h3>
+<!-- info: This section focuses on the initial purpose and/or reasoning
+for creating the model.-->
+
+<ul>
+<li>Description</li>
+</ul>
+<h3 id="domains-of-use">Domain(s) of use<a class="headerlink" href="#domains-of-use" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Description</li>
+</ul>
+<p><strong>Specific tasks performed:</strong></p>
+<h3 id="out-of-scope-uses">Out Of Scope Uses<a class="headerlink" href="#out-of-scope-uses" title="Permanent link">&para;</a></h3>
+<p>Provide potential applications and/or use cases for which use of the model is not suitable.</p>
+<h3 id="known-applications">Known Applications<a class="headerlink" href="#known-applications" title="Permanent link">&para;</a></h3>
+<!-- info: Fill out the following section if the model has any
+current known usages.
+-->
+
+<table>
+<thead>
+<tr>
+<th><strong>Application</strong></th>
+<th><strong>Purpose of Model Usage</strong></th>
+<th><strong><a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai">AI Act Risk</a></strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="">Application 1</a></td>
+<td>Foundation model providing customer embeddings for fraud detection scoring</td>
+<td>High</td>
+</tr>
+<tr>
+<td><a href="">Application 2</a></td>
+<td>Customer embeddings used directly as features for recommendation engine</td>
+<td>Limited</td>
+</tr>
+</tbody>
+</table>
+<p>Note, this table may not be exhaustive.  Model users and documentation consumers at large
+are highly encouraged to contribute known usages.</p>
+<h2 id="model-architecture">Model Architecture<a class="headerlink" href="#model-architecture" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Architecture Description</li>
+</ul>
+<ul>
+<li>Key components</li>
+</ul>
+<ul>
+<li>Hyperparameters</li>
+</ul>
+<ul>
+<li>Training Methodology</li>
+</ul>
+<ul>
+<li>Training duration</li>
+</ul>
+<ul>
+<li>Compute resources used</li>
+</ul>
+<h3 id="data-collection-and-preprocessing">Data Collection and Preprocessing<a class="headerlink" href="#data-collection-and-preprocessing" title="Permanent link">&para;</a></h3>
+<!--check data documentation to avoid duplicates of information-->
+
+<ul>
+<li><strong>Steps Involved</strong>:
+    - Data collection: Describe how the data was sourced (e.g., databases, APIs, sensors, or publicly available datasets).
+    - Data cleaning: Explain techniques used to handle missing values, outliers, or errors.<p>- Data transformation: Include any scaling or encoding applied.</p>
+</li>
+</ul>
+<h3 id="data-splitting">Data Splitting<a class="headerlink" href="#data-splitting" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Subset Definitions</strong>:
+    * <strong>Training set</strong>: 
+    * <strong>Validation set</strong>: 
+    * <strong>Test set</strong>: </li>
+<li><strong>Splitting Methodology</strong>:
+    * Describe the approach:
+        * <strong>Random Sampling</strong>: 
+        * <strong>Stratified Sampling</strong>: 
+        * <strong>Temporal Splits</strong>: </li>
+<li><strong>Proportions</strong>:
+    * Example: &ldquo;70% training, 20% validation, 10% testing.&rdquo;</li>
+<li><strong>Reproducibility</strong>:
+    * Mention how many seeds are being used and how many are needed to prove statistical significance</li>
+</ul>
+<p><strong>Data Shuffling</strong>:</p>
+<ul>
+<li>Shuffle applied: (Yes/No) </li>
+</ul>
+<h3 id="model-training-process">Model Training Process<a class="headerlink" href="#model-training-process" title="Permanent link">&para;</a></h3>
+<p><strong>Details of Processes</strong>:</p>
+<ul>
+<li><strong>Initialisation</strong>: </li>
+<li><strong>Loss Function</strong>:</li>
+<li><strong>Optimiser</strong>:</li>
+<li><strong>Hyperparameters</strong>:</li>
+</ul>
+<h3 id="model-validation">Model Validation:<a class="headerlink" href="#model-validation" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Model predictions on the validation set are evaluated.</li>
+<li>Performance metrics (e.g., accuracy, F1 score, RMSE) are monitored.</li>
+<li>Overfitting is detected using validation loss trends.</li>
+</ul>
+<h3 id="performance-metrics">Performance Metrics<a class="headerlink" href="#performance-metrics" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Evaluation Metrics Used (e.g., Accuracy, Precision, Recall, AUC-ROC)</li>
+<li>Benchmarking Results</li>
+<li>Validation Process</li>
+<li>Real-World Performance</li>
+<li>Stress testing</li>
+<li>Performance across different environments and populations</li>
+</ul>
+<p><strong>Hyperparameter Tuning</strong>:</p>
+<p><strong>Regularisation</strong>:</p>
+<p><strong>Early Stopping</strong>:</p>
+<h2 id="model-testing">Model Testing<a class="headerlink" href="#model-testing" title="Permanent link">&para;</a></h2>
+<h3 id="technical-processes">Technical Processes<a class="headerlink" href="#technical-processes" title="Permanent link">&para;</a></h3>
+<p><strong>Performance Metrics</strong>:</p>
+<ul>
+<li>Compute metrics on the test set:
+     - Accuracy, precision, recall, F1 score for classification.
+    - MSE, RMSE, MAE for regression.</li>
+</ul>
+<p><strong>Confusion Matrix</strong>:</p>
+<ul>
+<li>Generate a confusion matrix to evaluate classification results.</li>
+</ul>
+<p><strong>ROC Curve and AUC</strong>:</p>
+<ul>
+<li>For binary classifiers, compute the ROC curve and Area Under the Curve (AUC).</li>
+</ul>
+<p><strong>Feature Importance</strong>:</p>
+<ul>
+<li>Analyse feature contributions (for explainability).</li>
+</ul>
+<p><strong>Robustness Testing</strong>:</p>
+<ul>
+<li>Test the model on edge cases or adversarial examples.</li>
+</ul>
+<p><strong>Comparison to Baselines</strong>:</p>
+<ul>
+<li>Compare the model’s performance to a simple baseline (e.g., random guess, mean prediction).</li>
+</ul>
+<h3 id="model-bias-and-fairness-analysis">Model Bias and Fairness Analysis<a class="headerlink" href="#model-bias-and-fairness-analysis" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXclauxwg1nWuPj2z0TcgUK9y69AqHzk_-jQ5BJwYeDkjPSOLVddFcHJ6-oOiuZ2p4Rk3VpqyKw9CvU7N1LOqYtpdjN6CV_hhTxTtpNj4auLmqhsaIQ5fRLIPnVpZOnhtR63YNELlg?key=Lv0_1kRp5_LSkJabUJ8gjQ" />Implicit Bias, Measurement Bias, Temporal Bias, Selection Bias, Confounding Bias</p>
+<h4 id="bias-detection-methods-used">Bias Detection Methods Used<a class="headerlink" href="#bias-detection-methods-used" title="Permanent link">&para;</a></h4>
+<p><strong>Pre-processing:</strong> Resampling, Reweighting,Transformation (data imputation, changing order of data); Relabeling, Blinding</p>
+<p><strong>In-processing:</strong> Transfer learning, Reweighting, Constraint optimization, Adversarial Learning, Regularization, Bandits</p>
+<p><strong>Post-processing:</strong> Transformation, Calibration, Thresholding</p>
+<p><strong>Results of Bias Testing:</strong></p>
+<h4 id="mitigation-measures">Mitigation Measures<a class="headerlink" href="#mitigation-measures" title="Permanent link">&para;</a></h4>
+<p><strong>Fairness adjustments:</strong> Introduce fairness criteria (like demographic parity, equal opportunity, or equalized odds) into the model training process. </p>
+<p><strong>Adversarial Debiasing:</strong> Use adversarial networks to remove biased information during training. The main model tries to make accurate predictions, while an adversary network tries to predict sensitive attributes from the model&rsquo;s predictions.</p>
+<h4 id="retraining-approaches">Retraining approaches<a class="headerlink" href="#retraining-approaches" title="Permanent link">&para;</a></h4>
+<p><strong>Fairness Regularization:</strong> Modify the model&rsquo;s objective function to penalize bias. This introduces regularization terms that discourage the model from making predictions that disproportionately affect certain groups.</p>
+<p><strong>Fair Representation Learning:</strong> Learn latent representations of the input data that remove sensitive attributes, ensuring that downstream models trained on these representations are fair.</p>
+<h3 id="post-processing-techniques">Post-Processing Techniques<a class="headerlink" href="#post-processing-techniques" title="Permanent link">&para;</a></h3>
+<p><strong>Fairness-Aware Recalibration:</strong> After the model is trained, adjust decision thresholds separately for different demographic groups to reduce disparities in false positive/false negative rates.</p>
+<p><strong>Output Perturbation:</strong> Introduce randomness or noise to model predictions to make outcomes more equitable across groups.</p>
+<p><strong>Fairness Impact Statement:</strong> Explain trade-offs made to satisfy certain fairness criterias</p>
+<h2 id="model-interpretability-and-explainability">Model Interpretability and Explainability<a class="headerlink" href="#model-interpretability-and-explainability" title="Permanent link">&para;</a></h2>
+<p><strong>Explainability Techniques Used:</strong></p>
+<ul>
+<li>Shapley values, LIME, etc.</li>
+</ul>
+<p><strong>Post-hoc Explanation Models</strong></p>
+<ul>
+<li>Feature Importance, Permutation Importance, SHAP (SHapley Additive exPlanations), LIME (Local Interpretable Model-agnostic Explanations):</li>
+<li>Partial Dependence Plots (PDP) </li>
+<li>Counterfactual Explanations</li>
+<li>Surrogate Models</li>
+<li>Attention Mechanisms (for Deep Learning)</li>
+</ul>
+<p><strong>Model-Specific Explanation Techniques</strong></p>
+<ul>
+<li>Grad-CAM (Gradient-weighted Class Activation Mapping)</li>
+<li>Layer-wise Relevance Propagation (LRP)</li>
+<li>TreeSHAP (SHAP for Decision Trees)</li>
+</ul>
+<p>How interpretable is the model’s decision-making process?</p>
+<p>Some technical tools that can aid transparency include:</p>
+<ul>
+<li>Data Lineage Tools: Track the flow and transformation of data (e.g., Apache Atlas, Pachyderm).</li>
+<li>Explainability Libraries: SHAP, LIME, Captum, TensorFlow Explain.</li>
+<li>Model Debugging Tools: What-If Tool, IBM AI Explainability 360.</li>
+<li>Version Control Systems: Git, DVC (Data Version Control) for datasets and models.</li>
+</ul>
+<h2 id="documentation-metadata">Documentation Metadata<a class="headerlink" href="#documentation-metadata" title="Permanent link">&para;</a></h2>
+<h3 id="version">Version<a class="headerlink" href="#version" title="Permanent link">&para;</a></h3>
+<!-- info: provide version of this document, if applicable (dates might also be useful) -->
+
+<h3 id="template-version">Template Version<a class="headerlink" href="#template-version" title="Permanent link">&para;</a></h3>
+<!-- info: link to model documentation template (i.e. could be a GitHub link) -->
+
+<h3 id="documentation-authors">Documentation Authors<a class="headerlink" href="#documentation-authors" title="Permanent link">&para;</a></h3>
+<!-- info: Give documentation authors credit
+
+Select one or more roles per author and reference author's
+emails to ease communication and add transparency. -->
+
+<ul>
+<li><strong>Name, Team:</strong> (Owner / Contributor / Manager)</li>
+<li><strong>Name, Team:</strong> (Owner / Contributor / Manager)</li>
+<li><strong>Name, Team:</strong> (Owner / Contributor / Manager)</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../template-data-documentation/" class="btn btn-neutral float-right" title="Data Documentation Template">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../template-application-documentation/" class="btn btn-neutral" title="Application Documentation Template"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../template-application-documentation/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../template-data-documentation/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>

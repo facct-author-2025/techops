@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Application Documentation Template - techops</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Application Documentation Template";
+    var mkdocs_page_input_path = "template-application-documentation.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> techops</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="tocbase current">
+    
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">GETTING STARTED</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="..">Home</a>
+  </li>
+        
+      </ul>
+    </li>
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">TEMPLATES</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
+          
+
+
+  
+    
+    <li class="navtree toctree-l2 page current">
+      <a class="current" href="./">
+        Application Documentation Template
+          <span class="toctree-expand"></span>
+      </a>
+    </li>
+    
+      
+
+
+
+  <li class="toctree-l2 current">
+    <ul class="subnav-l2 current">
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#general-information">General Information</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#risk-classification">Risk classification</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#application-functionality">Application Functionality</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#data-documentation">Data Documentation</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#model-development">Model Development</a>
+        </li>
+    
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#deployment">
+      Deployment
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#infrastructure-and-environment-details">Infrastructure and Environment Details</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#integration-with-external-systems">Integration with External Systems</a>
+        </li>
+    
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#deployment-plan">
+      Deployment Plan
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
+      
+          
+
+  <li class="toctree-l4 current with-children">
+    <a href="#risk-management-system">
+      Risk Management System
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l4 current">
+    <ul class="subnav-l4 current">
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#risk-mitigation-measures">Risk Mitigation Measures:</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+    </ul>
+  </li>
+
+      
+    
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#testing-and-validation-accuracy-robustness-cybersecurity">
+      Testing and Validation (Accuracy, Robustness, Cybersecurity)
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#accuracy-throughout-the-lifecycle">Accuracy throughout the lifecycle:</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#robustness">Robustness</a>
+        </li>
+    
+      
+        <li class="toctree-l4">
+          <a class="toctree-l5" href="#cybersecurity">Cybersecurity</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#human-oversight">Human Oversight</a>
+        </li>
+    
+      
+          
+
+  <li class="toctree-l3">
+    <a href="#incident-management">
+      Incident Management
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l3">
+    <ul class="subnav-l3 toc-hidden">
+    
+      
+          
+
+  <li class="toctree-l4 current with-children">
+    <a href="#troubleshooting-ai-application-deployment">
+      Troubleshooting AI Application Deployment
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l4 current">
+    <ul class="subnav-l4 current">
+    
+      
+          
+
+  <li class="toctree-l5 current with-children">
+    <a href="#infrastructure-level-issues">
+      Infrastructure-Level Issues
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l5 current">
+    <ul class="subnav-l5 current">
+    
+      
+        <li class="toctree-l6">
+          <a class="toctree-l7" href="#insufficient-resources">Insufficient Resources</a>
+        </li>
+    
+      
+        <li class="toctree-l6">
+          <a class="toctree-l7" href="#network-failures">Network Failures</a>
+        </li>
+    
+      
+        <li class="toctree-l6">
+          <a class="toctree-l7" href="#deployment-pipeline-failures">Deployment Pipeline Failures</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+          
+
+  <li class="toctree-l5">
+    <a href="#integration-problems">
+      Integration Problems
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l5">
+    <ul class="subnav-l5 toc-hidden">
+    
+      
+        <li class="toctree-l6">
+          <a class="toctree-l7" href="#api-failures">API Failures</a>
+        </li>
+    
+      
+        <li class="toctree-l6">
+          <a class="toctree-l7" href="#data-format-mismatches">Data Format Mismatches</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+        <li class="toctree-l5">
+          <a class="toctree-l6" href="#data-quality-problems">Data Quality Problems</a>
+        </li>
+    
+      
+          
+
+  <li class="toctree-l5">
+    <a href="#model-level-issues">
+      Model-Level Issues
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l5">
+    <ul class="subnav-l5 toc-hidden">
+    
+      
+        <li class="toctree-l6">
+          <a class="toctree-l7" href="#performance-or-deployment-issues">Performance or Deployment Issues</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+          
+
+  <li class="toctree-l5">
+    <a href="#safety-and-security-issues">
+      Safety and Security Issues
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l5">
+    <ul class="subnav-l5 toc-hidden">
+    
+      
+        <li class="toctree-l6">
+          <a class="toctree-l7" href="#unauthorised-access">Unauthorised Access</a>
+        </li>
+    
+      
+        <li class="toctree-l6">
+          <a class="toctree-l7" href="#data-breaches">Data Breaches</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+          
+
+  <li class="toctree-l5">
+    <a href="#monitoring-and-logging-failures">
+      Monitoring and Logging Failures
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l5">
+    <ul class="subnav-l5 toc-hidden">
+    
+      
+        <li class="toctree-l6">
+          <a class="toctree-l7" href="#missing-or-incomplete-logs">Missing or Incomplete Logs</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+      
+          
+
+  <li class="toctree-l5">
+    <a href="#recovery-and-rollback">
+      Recovery and Rollback
+      <span class="toctree-expand"></span>
+    </a>
+  </li>
+
+
+
+  <li class="toctree-l5">
+    <ul class="subnav-l5 toc-hidden">
+    
+      
+        <li class="toctree-l6">
+          <a class="toctree-l7" href="#rollback-mechanisms">Rollback Mechanisms</a>
+        </li>
+    
+      
+        <li class="toctree-l6">
+          <a class="toctree-l7" href="#disaster-recovery">Disaster Recovery</a>
+        </li>
+    
+    </ul>
+  </li>
+
+      
+    
+    </ul>
+  </li>
+
+      
+    
+    </ul>
+  </li>
+
+      
+    
+    </ul>
+  </li>
+
+
+  
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../template-model-documentation/">Model Documentation Template</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../template-data-documentation/">Data Documentation Template</a>
+  </li>
+        
+      </ul>
+    </li>
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">EXAMPLES</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../example-model-documentation-alisnet/">ALiSNet Model Documentation</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../example-data-documentation-voc-skin-tones/">Skin Tones Data Documentation</a>
+  </li>
+        
+      </ul>
+    </li>
+    
+  </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">techops</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>TEMPLATES &raquo;</li>
+        
+      
+    
+    <li>Application Documentation Template</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="application-documentation-template">Application Documentation Template<a class="headerlink" href="#application-documentation-template" title="Permanent link">&para;</a></h1>
+<h2 id="general-information">General Information<a class="headerlink" href="#general-information" title="Permanent link">&para;</a></h2>
+<p><strong>Purpose and Intended Use</strong>:</p>
+<p>- Description of the AI system&rsquo;s intended purpose, including the sector of deployment.
+   - Clearly state the problem the AI application aims to solve.
+   - Delineate target users and stakeholders.
+   - Set measurable goals and key performance indicators (KPIs).
+   - Consider ethical implications and regulatory constraints. 
+   - Clear statement on prohibited uses or potential misuse scenarios.
+   - <strong>Operational environment:</strong> Describe where and how the AI system will operate, such as on mobile devices, cloud platforms, or embedded systems.</p>
+<h2 id="risk-classification">Risk classification<a class="headerlink" href="#risk-classification" title="Permanent link">&para;</a></h2>
+<ul>
+<li>High / Limited / Minimal (in accordance with the AI Act)</li>
+<li>reasoning for the above classification</li>
+</ul>
+<h2 id="application-functionality">Application Functionality<a class="headerlink" href="#application-functionality" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Model Capabilities</strong>:<p>- What the application can and cannot do (limitations).
+  - Supported languages, data types, or scenarios.</p>
+</li>
+</ul>
+<ul>
+<li><strong>Input Data Requirements</strong>:<p>- Format and quality expectations for input data.
+  - Examples of valid and invalid inputs.</p>
+</li>
+</ul>
+<ul>
+<li><strong>Output Explanation</strong>:<p>- How to interpret predictions, classifications, or recommendations.
+  - Uncertainty or confidence measures, if applicable.</p>
+</li>
+</ul>
+<ul>
+<li><strong>System Architecture Overview</strong>:<p>- Functional description and architecture of the system.
+  - Describe the key components of the system (including datasets, algorithms, models, etc.)</p>
+</li>
+</ul>
+<ul>
+<li><strong>Data and Model Documentation integration</strong>:<p>- Logging of necessary data and model documentation and responsible contacts.</p>
+</li>
+</ul>
+<h2 id="data-documentation">Data Documentation<a class="headerlink" href="#data-documentation" title="Permanent link">&para;</a></h2>
+<p><strong>Data Collection</strong>:
+- Define the orgin of the data (existing databases, APIs, or custom collection methods).
+- How does the data represent the real-world context of the application?</p>
+<!-- color code here for data documentation elements that must be checked from the responsible stakeholder to avoid duplicates in documentation that are hard to maintain>
+- **Data Documentation**:
+- Define the types of data the model will process (e.g., images, text, time-series).
+- Document the expected size, format, and quality of training datasets.
+- Specify any preprocessing steps or feature engineering needed.
+   - Clean and preprocess the data (e.g., handling missing values, normalisation).
+    - Annotate and label data if required (for supervised learning).
+    - Split the dataset into training, validation, and test sets.
+   - Training dataset details
+
+
+   **Data Cleaning**:
+
+    - Handling missing values, duplicates, and outliers.
+- **Normalisation/Standardisation**:
+
+    - Scaling data to a specific range or standard deviation.
+- **Encoding**:
+
+    - Converting categorical data (e.g., one-hot, label encoding).
+- **Transformation**:
+
+    - Applying mathematical transformations (e.g., log, square root).
+- **Augmentation**:
+
+    - Expanding datasets with techniques like flipping images or paraphrasing text.
+- **Anonymisation**:
+
+    - Masking or pseudonymising sensitive data for privacy compliance.
+- **Balancing**:
+
+    - Addressing imbalanced datasets (e.g., oversampling, SMOTE).
+- **Feature Selection/Removal**:
+
+    - Criteria for keeping or removing features.
+-->
+
+<h2 id="model-development">Model Development<a class="headerlink" href="#model-development" title="Permanent link">&para;</a></h2>
+<p><strong>Model Architecture</strong></p>
+<ul>
+<li>Describe the selected algorithms and architectures  (e.g., supervised, unsupervised, or reinforcement learning).</li>
+<li><strong>Hyperparameter Tuning Details</strong>: List of chosen hyperparameters and their values, including justification for selection.</li>
+<li><strong>Training Logs</strong>: Document the training process, including time, resources used, and any issues encountered (e.g., convergence).</li>
+<li>Describe the design and training of the model using the prepared data.</li>
+<li>Results of the  test and validatation the model&rsquo;s performance on separate datasets.</li>
+<li>Include diagrams or descriptions of key components and their interactions.</li>
+</ul>
+<!-- color code here for model documentation elements that must be checked from the responsible stakeholder to avoid duplicates in documentation that are hard to maintain>
+
+## Model Validation and Testing
+- **Assess the metrics of model performance** 
+   - accuracy:
+   - precision: 
+   - recall:
+   - F1 score:
+
+- **Advanced performance metrics**
+  - ROC-AUC:
+    - trade-off between true positive rate and false positive rate
+  - PR- AUC
+     - Evaluating precision and recall trade-off
+  - Specificity
+    - (True Negatives/(True Negatives+False Positives))
+  - Log Loss (Cross-Entropy Loss):
+    - Penalises incorrect probabilities assigned to classes.
+
+
+- **Context dependant metrics**: 
+  - Regression Metrics: For tasks predicting continuous values
+  - Clustering Metrics: for tasks grouping similar data points
+  - Ranking Metrics: for tasks predicting rankings (e.g., search engines recommendation systems)
+  - NLP processing metrics (e.g., text classification, sequence-to-sequence tasks)
+
+
+- **Fairness Metrics**:
+
+    - Ensure the model treats different groups (e.g., based on gender, race) equitably.
+    - Examples: Demographic parity, equal opportunity, and disparate impact.
+- **Explainability Metrics**:
+
+    - Measure how understandable and interpretable are the model’s decisions.
+    - Examples: Feature importance, fidelity (how well explanations match the model), and sparsity (using fewer features for explanations).
+    - 
+- **Robustness Metrics**:
+
+    - Assess how well the model performs under challenging or unexpected conditions.
+    - Examples: Adversarial robustness, performance under data drift, and sensitivity to input changes.
+
+- Limitations of the performance after the tests
+- Simulate deployment scenarios to understand real-world implications.
+- Define thresholds for acceptable performance levels.
+- Justify the choice of metrics based on the application’s purpose.
+
+-->
+
+<h2 id="deployment">Deployment<a class="headerlink" href="#deployment" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Infrastructure and environment details (e.g., cloud setup, APIs).</li>
+<li>Integration with external systems or applications.</li>
+</ul>
+<h3 id="infrastructure-and-environment-details">Infrastructure and Environment Details<a class="headerlink" href="#infrastructure-and-environment-details" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Cloud Setup</strong>:
+    - Specify cloud provider (e.g., AWS, Azure, GCP) and regions.
+    - List required services: compute (e.g., EC2, Kubernetes), storage (e.g., S3, Blob Storage), and databases (e.g., DynamoDB, Firestore).
+    - Define resource configurations (e.g., VM sizes, GPU/TPU requirements).
+    - Network setup: VPC, subnets, and security groups.</li>
+</ul>
+<ul>
+<li><strong>APIs</strong>:
+    - API endpoints, payload structure, authentication methods (e.g., OAuth, API keys).
+    - Latency and scalability expectations.</li>
+</ul>
+<h2 id="integration-with-external-systems">Integration with External Systems<a class="headerlink" href="#integration-with-external-systems" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Systems</strong>:
+    - List dependencies 
+    - Data flow diagrams showing interactions.
+    - Error-handling mechanisms for APIs or webhooks</li>
+</ul>
+<h2 id="deployment-plan">Deployment Plan<a class="headerlink" href="#deployment-plan" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Infrastructure</strong>:<p>- List environments: development, staging, production.
+  - Resource scaling policies (e.g., autoscaling, redundancy).
+  - Backup and recovery processes.</p>
+</li>
+</ul>
+<ul>
+<li><strong>Integration Steps</strong>:<p>- Order of deployment (e.g., database migrations, model upload, service launch).
+  - Dependencies like libraries, frameworks, or APIs.
+  - Rollback strategies for each component.</p>
+</li>
+</ul>
+<ul>
+<li><strong>User Information</strong>: where is this under deployment?</li>
+</ul>
+<p>## Lifecycle Management</p>
+<ul>
+<li>Monitoring procedures for performance and ethical compliance.</li>
+<li>Versioning and change logs for model updates.</li>
+</ul>
+<ul>
+<li><strong>Metrics</strong>:<p>- Application performance: response time, error rate.
+  - Model performance: accuracy, precision, recall.
+  - Infrastructure: CPU, memory, network usage.</p>
+</li>
+</ul>
+<ul>
+<li><strong>Key Activities</strong>:<p>- Monitor performance in real-world usage.
+  - Identify and fix drifts, bugs, or failures.
+  - Update the model periodically.</p>
+</li>
+</ul>
+<ul>
+<li><strong>Documentation Needs</strong>:
+    - <strong>Monitoring Logs</strong>: Real-time data on accuracy, latency, and uptime.
+    - <strong>Incident Reports</strong>: Record of failures, impacts, and resolutions.
+    - <strong>Retraining Logs</strong>: Data updates and changes in performance.
+    - <strong>Audit Trails</strong>: Comprehensive history of changes to ensure compliance.</li>
+</ul>
+<h3 id="risk-management-system">Risk Management System<a class="headerlink" href="#risk-management-system" title="Permanent link">&para;</a></h3>
+<!--**Instructions:**  A thorough risk management system is mandated by the AI Act, especially for high-risk AI systems. This section documents the  proactive efforts to ensure the AI system operates safely and ethically.-->
+
+<p><strong>Risk Assessment Methodology:</strong> Describe the frameworks or standards used to identify and assess risks, such as ISO 31000 or failure mode and effects analysis (FMEA), or NIST Risk Assessment Framework.</p>
+<p><strong>Identified Risks:</strong> </p>
+<p><strong>Potential Harmful Outcomes:</strong> List possible negative effects, such as biased decisions, privacy breaches, or safety hazards.</p>
+<p><strong>Likelihood and Severity:</strong> Assess how likely each risk is to occur and the potential impact on users or society.</p>
+<h4 id="risk-mitigation-measures">Risk Mitigation Measures:<a class="headerlink" href="#risk-mitigation-measures" title="Permanent link">&para;</a></h4>
+<p><strong>Preventive Measures:</strong> Detail actions taken to prevent risks, like implementing data validation checks or bias reduction techniques.</p>
+<p><strong>Protective Measures:</strong> Describe contingency plans and safeguards in place to minimize the impact if a risk materializes.</p>
+<h2 id="testing-and-validation-accuracy-robustness-cybersecurity">Testing and Validation (Accuracy, Robustness, Cybersecurity)<a class="headerlink" href="#testing-and-validation-accuracy-robustness-cybersecurity" title="Permanent link">&para;</a></h2>
+<p><strong>Testing and Validation Procedures (Accuracy):</strong></p>
+<p><strong>Performance Metrics:</strong> List the metrics used to evaluate the AI system, such as accuracy, precision, recall, F1 score, or mean squared error.</p>
+<p><strong>Validation Results:</strong> Summarize the outcomes of testing, including any benchmarks or thresholds met or exceeded.</p>
+<p><strong>Measures for Accuracy:</strong> High-quality data, algorithm optimisation, evaluation metrics, and real-time performance tracking.</p>
+<h4 id="accuracy-throughout-the-lifecycle">Accuracy throughout the lifecycle:<a class="headerlink" href="#accuracy-throughout-the-lifecycle" title="Permanent link">&para;</a></h4>
+<p><strong>Data Quality and Management:</strong> High-Quality Training Data: Data Preprocessing, techniques like normalisation, outlier removal, and feature scaling to improve data consistency, Data Augmentation, Data Validation</p>
+<p><strong>Model Selection and Optimisation:</strong> Algorithm selection suited for the problem, Hyperparameter Tuning (grid search, random search, Bayesian optimization), Performance Validation( cross-validation by splitting data into training and testing sets, using k-fold or stratified cross-validation), Evaluation Metrics (precision,recall, F1 score, accuracy, mean squared error (MSE), or area under the curve (AUC).</p>
+<p><strong>Feedback Mechanisms:</strong> Real-Time Error Tracking, Incorporate mechanisms to iteratively label and include challenging or misclassified examples for retraining.</p>
+<h4 id="robustness">Robustness<a class="headerlink" href="#robustness" title="Permanent link">&para;</a></h4>
+<p><strong>Robustness Measures:</strong>
+- Adversarial training, stress testing, redundancy, error handling, and domain adaptation.</p>
+<p><strong>Scenario-Based Testing:</strong>
+- Plan for adversarial conditions, edge cases, and unusual input scenarios.</p>
+<ul>
+<li>Design the system to degrade gracefully when encountering unexpected inputs.</li>
+</ul>
+<p><strong>Redundancy and Fail-Safes:</strong></p>
+<ul>
+<li>Introduce fallback systems (e.g., rule-based or simpler models) to handle situations where the main AI system fails.</li>
+</ul>
+<p><strong>Uncertainty Estimation:</strong></p>
+<ul>
+<li>Include mechanisms to quantify uncertainty in the model’s predictions (e.g., Bayesian networks or confidence scores).</li>
+</ul>
+<h4 id="cybersecurity">Cybersecurity<a class="headerlink" href="#cybersecurity" title="Permanent link">&para;</a></h4>
+<p><strong>Data Security:</strong></p>
+<p><strong>Access Control:</strong></p>
+<p><strong>Incident Response :</strong></p>
+<p>These measures include threat modelling, data security, adversarial robustness, secure development practices, access control, and incident response mechanisms.</p>
+<p>Post-deployment monitoring, patch management, and forensic logging are crucial to maintaining ongoing cybersecurity compliance.</p>
+<p>Documentation of all cybersecurity processes and incidents is mandatory to ensure accountability and regulatory conformity.</p>
+<h2 id="human-oversight">Human Oversight<a class="headerlink" href="#human-oversight" title="Permanent link">&para;</a></h2>
+<p><strong>Human-in-the-Loop Mechanisms:</strong>  Explain how human judgment is incorporated into the AI system’s decision-making process, such as requiring human approval before action.</p>
+<p><strong>Override and Intervention Procedures:</strong> Describe how users or operators can intervene or disable the AI system in case of errors or emergencies.</p>
+<p><strong>User Instructions and Training:</strong> Provide guidelines and training materials to help users understand how to operate the AI system safely and effectively.</p>
+<p><strong>Limitations and Constraints of the System:</strong> Clearly state what the AI system cannot do, including any known weaknesses or scenarios where performance may degrade.</p>
+<h2 id="incident-management">Incident Management<a class="headerlink" href="#incident-management" title="Permanent link">&para;</a></h2>
+<!-- what happens when things go wrong -->
+<ul>
+<li><strong>Common Issues</strong>:<p>- List common errors and their solutions.
+  - Logs or debugging tips for advanced troubleshooting.</p>
+</li>
+</ul>
+<ul>
+<li><strong>Support Contact</strong>:<p>- How to reach technical support or community forums.</p>
+</li>
+</ul>
+<h3 id="troubleshooting-ai-application-deployment">Troubleshooting AI Application Deployment<a class="headerlink" href="#troubleshooting-ai-application-deployment" title="Permanent link">&para;</a></h3>
+<p>This section outlines potential issues that can arise during the deployment of an AI application, along with their causes, resolutions, and best practices for mitigation.</p>
+<h4 id="infrastructure-level-issues">Infrastructure-Level Issues<a class="headerlink" href="#infrastructure-level-issues" title="Permanent link">&para;</a></h4>
+<h5 id="insufficient-resources">Insufficient Resources<a class="headerlink" href="#insufficient-resources" title="Permanent link">&para;</a></h5>
+<ul>
+<li><strong>Problem</strong>: Inaccurate resource estimation for production workloads.<ul>
+<li>Unexpected spikes in user traffic can lead to insufficient resources such as compute, memory or storage that can lead to crashes and bad performance</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><strong>Mitigation Strategy</strong>:</li>
+</ul>
+<!-- describe here the resolution strategy such as:
+-  Enable autoscaling (e.g., Kubernetes Horizontal Pod Autoscaler).
+  - Monitor usage metrics and adjust resource allocation dynamically.
+  - Implement rate-limiting for traffic spikes. -->
+
+<h5 id="network-failures">Network Failures<a class="headerlink" href="#network-failures" title="Permanent link">&para;</a></h5>
+<ul>
+<li><strong>Problem</strong>:  network bottlenecks  can lead to inaccessible or experiences latency of the application.</li>
+</ul>
+<ul>
+<li><strong>Mitigation Strategy</strong>:</li>
+</ul>
+<!-- 
+  - Test network connectivity 
+  - Use content delivery networks (CDNs) or regional load balancers.
+  - Ensure proper failover mechanisms.-->
+
+<h5 id="deployment-pipeline-failures">Deployment Pipeline Failures<a class="headerlink" href="#deployment-pipeline-failures" title="Permanent link">&para;</a></h5>
+<ul>
+<li><strong>Problem</strong>: pipeline fails to build, test, or deploy because of issues of compatibility between application code and infrastructure, environment variables or credentials misconfiguration.</li>
+</ul>
+<ul>
+<li><strong>Mitigation Strategy</strong>: </li>
+</ul>
+<!--:
+  - Roll back to the last stable build.
+  - Fix pipeline scripts and use containerisation for environment consistency.
+  - Enable verbose logging for error diagnostics.-->
+
+<h4 id="integration-problems">Integration Problems<a class="headerlink" href="#integration-problems" title="Permanent link">&para;</a></h4>
+<h5 id="api-failures">API Failures<a class="headerlink" href="#api-failures" title="Permanent link">&para;</a></h5>
+<ul>
+<li><strong>Problem</strong>: External APIs or internal services are unreachable due to network errors or authentication failures.</li>
+</ul>
+<ul>
+<li><strong>Mitigation Strategy</strong>:</li>
+</ul>
+<!--:
+  - Implement retries with exponential backoff.
+  - Validate API keys or tokens and refresh as needed.
+  - Log and monitor API responses for debugging. -->
+
+<h5 id="data-format-mismatches">Data Format Mismatches<a class="headerlink" href="#data-format-mismatches" title="Permanent link">&para;</a></h5>
+<ul>
+<li><strong>Problem</strong>: Crashes or errors due to unexpected data formats such as changes in the schema of external data sources or missing data validation steps.</li>
+</ul>
+<ul>
+<li><strong>Mitigation Strategy</strong>: </li>
+</ul>
+<!-->
+  - Use schema validation tools (e.g., JSON schema validators).
+  - Add versioning to APIs and validate inputs before processing.-->
+
+<h4 id="data-quality-problems">Data Quality Problems<a class="headerlink" href="#data-quality-problems" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Problem</strong>: Inaccurate or corrupt data leads to poor predictions.</li>
+<li><strong>Causes</strong>:<ul>
+<li>No data validation or cleaning processes.</li>
+<li>Inconsistent labelling in training datasets.</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><strong>Mitigation Strategy</strong>: </li>
+</ul>
+<!--
+- **Resolution**:
+  - Automate data quality checks (e.g., Great Expectations framework).
+  - Regularly audit and clean production data.-->
+
+<h4 id="model-level-issues">Model-Level Issues<a class="headerlink" href="#model-level-issues" title="Permanent link">&para;</a></h4>
+<h5 id="performance-or-deployment-issues">Performance or Deployment Issues<a class="headerlink" href="#performance-or-deployment-issues" title="Permanent link">&para;</a></h5>
+<ul>
+<li><strong>Problem</strong>: Incorrect or inconsistent results due to data drift or inadequate training data for the real world deployment domain. </li>
+</ul>
+<ul>
+<li><strong>Mitigation Strategy</strong>:</li>
+</ul>
+<!--
+- **Resolution**:
+  - Monitoring for data drift and retraining of the model as needed.
+  - Regularly update the model -->
+
+<h4 id="safety-and-security-issues">Safety and Security Issues<a class="headerlink" href="#safety-and-security-issues" title="Permanent link">&para;</a></h4>
+<h5 id="unauthorised-access">Unauthorised Access<a class="headerlink" href="#unauthorised-access" title="Permanent link">&para;</a></h5>
+<ul>
+<li><strong>Problem</strong>: Sensitive data or APIs are exposed due to misconfigured authentication and authorization.</li>
+</ul>
+<h5 id="data-breaches">Data Breaches<a class="headerlink" href="#data-breaches" title="Permanent link">&para;</a></h5>
+<ul>
+<li><strong>Problem</strong>: User or model data is compromised due to insecure storage or lack of monitoring and logging of data access. </li>
+</ul>
+<ul>
+<li><strong>Mitigation Strategy</strong>: </li>
+</ul>
+<!--
+- **Resolution**:
+  - Use secure storage services (e.g., AWS KMS).
+  - Implement auditing for data access and alerts for unusual activity.
+  6.1. Delayed or Missing Data-->
+
+<h4 id="monitoring-and-logging-failures">Monitoring and Logging Failures<a class="headerlink" href="#monitoring-and-logging-failures" title="Permanent link">&para;</a></h4>
+<h5 id="missing-or-incomplete-logs">Missing or Incomplete Logs<a class="headerlink" href="#missing-or-incomplete-logs" title="Permanent link">&para;</a></h5>
+<ul>
+<li><strong>Problem</strong>: Lack of information to debug issues due to inefficient logging. Critical issues go unnoticed, or too many false positives occur by lack of implementation ofactionable information in alerts. </li>
+</ul>
+<ul>
+<li><strong>Mitigation Strategy</strong>: </li>
+</ul>
+<!--
+- **Resolution**:
+  - Fine-tune alerting thresholds and prioritise critical alerts.
+  - Use tools like Prometheus Alertmanager to manage and group alerts. -->
+
+<h4 id="recovery-and-rollback">Recovery and Rollback<a class="headerlink" href="#recovery-and-rollback" title="Permanent link">&para;</a></h4>
+<h5 id="rollback-mechanisms">Rollback Mechanisms<a class="headerlink" href="#rollback-mechanisms" title="Permanent link">&para;</a></h5>
+<ul>
+<li><strong>Problem</strong>: New deployment introduces critical errors.</li>
+</ul>
+<ul>
+<li><strong>Mitigation Strategy</strong>: </li>
+</ul>
+<!--
+- **Resolution**:
+  - Use blue-green or canary deployments to minimise impact.
+  - Maintain backups of previous versions and configurations. -->
+
+<h5 id="disaster-recovery">Disaster Recovery<a class="headerlink" href="#disaster-recovery" title="Permanent link">&para;</a></h5>
+<ul>
+<li><strong>Problem</strong>: Complete system outage or data loss.</li>
+</ul>
+<ul>
+<li><strong>Mitigation Strategy</strong>:</li>
+</ul>
+<!--
+- **Resolution**:
+  - Test and document disaster recovery plans.
+  - Use automated backups and verify restore procedures.-->
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../template-model-documentation/" class="btn btn-neutral float-right" title="Model Documentation Template">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../template-model-documentation/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>

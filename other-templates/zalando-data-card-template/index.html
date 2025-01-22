@@ -1,0 +1,2997 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Zalando data card template - techops</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Zalando data card template";
+    var mkdocs_page_input_path = "other-templates/zalando-data-card-template.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> techops</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="tocbase current">
+    
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">GETTING STARTED</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../..">Home</a>
+  </li>
+        
+      </ul>
+    </li>
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">TEMPLATES</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../template-application-documentation/">Application Documentation Template</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../template-model-documentation/">Model Documentation Template</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../template-data-documentation/">Data Documentation Template</a>
+  </li>
+        
+      </ul>
+    </li>
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">EXAMPLES</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../example-model-documentation-alisnet/">ALiSNet Model Documentation</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../example-data-documentation-voc-skin-tones/">Skin Tones Data Documentation</a>
+  </li>
+        
+      </ul>
+    </li>
+    
+  </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">techops</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Zalando data card template</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1>Dataset Name (Acronym)</h1>
+
+<p>Data card contributions and feedback are welcome!</p>
+<h2 id="template-version">Template Version<a class="headerlink" href="#template-version" title="Permanent link">&para;</a></h2>
+<!-- scope: telescope -->
+<!-- info: link to data card version -->
+<p><a href="https://github.bus.zalan.do/aithics/ai-ml-system-documentation-guidelines-and-templates/tags">0.2.0</a></p>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<h4 id="last-update">Last Update<a class="headerlink" href="#last-update" title="Permanent link">&para;</a></h4>
+<p>DD/MM/YYYY
+(See <a href="#dataset-version-and-maintenance">version section</a> for details)</p>
+<h4 id="authors">Author(s)<a class="headerlink" href="#authors" title="Permanent link">&para;</a></h4>
+<!-- info: Authors should get credit in overview section
+
+Select one or more roles per author and reference author's
+emails to ease communication and add transparency.
+
+If there are more than five authors, add them all in the authorship section and
+create a reference to that section.
+-->
+
+<ul>
+<li><strong>Name, Team:</strong> (Owner / Contributor / Manager / etc.)</li>
+<li><strong>Name, Team:</strong> (Owner / Contributor / Manager / etc.)</li>
+<li>&hellip;</li>
+</ul>
+<p>See the <a href="#authorship">Authorship section</a> for full list of authors (if more than 5)</p>
+<h4 id="data-summary">Data Summary<a class="headerlink" href="#data-summary" title="Permanent link">&para;</a></h4>
+<!-- width: full -->
+
+<p>Write a short summary describing your dataset (limit
+200 words). Include information about the content
+and topic of the data, sources and motivations for the
+dataset, benefits and the problems or use cases it is
+suitable for. For readers that only take 10 seconds to look
+at this data card, adding one good overview image might also
+make the difference between this data being discovered
+and going unnoticed.</p>
+<p>For more tips on describing data, see Zalando Data Foundation&rsquo;s
+<a href="https://docs.google.com/document/d/1njN1HMnNUl2J3aaY99FMwdJrSp0eMPsTY_cgOSsh46U">Quality of Data Descriptions</a>!</p>
+<h4 id="status">Status<a class="headerlink" href="#status" title="Permanent link">&para;</a></h4>
+<!-- scope: telescope -->
+<!-- info: Select **one:** -->
+<p><strong>Status Date:</strong> DD/MM/YYYY</p>
+<p><strong>Under Preparation</strong> - The dataset is still under active curation
+and is not yet ready for use due to active &ldquo;dev&rdquo; updates.</p>
+<p><strong>Regularly Updated</strong> - New versions of the dataset
+have been or will continue to be
+made available.</p>
+<p><strong>Actively Maintained</strong> - No new versions will be made
+available, but this dataset will
+be actively maintained,
+including but not limited to
+updates to the data.</p>
+<p><strong>Limited Maintenance</strong> - The data will not be updated,
+but any technical issues will be
+addressed.</p>
+<p><strong>Deprecated</strong> - This dataset is obsolete or is
+no longer being maintained.</p>
+<h4 id="relevant-links">Relevant Links<a class="headerlink" href="#relevant-links" title="Permanent link">&para;</a></h4>
+<!-- info: Provide a list of relevant links for quick accessibility
+by documentation consumers.
+
+The examples below represent
+: -->
+<!-- width: full -->
+<ul>
+<li>[Dataset Link] - i.e. link to S3 bucket, SQL or Big Query tables, etc.</li>
+<li>[Initiative Link] - i.e. link to Google Doc</li>
+<li>[Code Repository Link] - i.e. link to <a href="https://github.bus.zalan.do/">GitHub Enterprise</a> repository</li>
+<li>[Data Quality Monitoring Link] - i.e. link to Data Quality Framework dashboard (for example, <a href="(https://cptdpai-data-quality-framework.docs.zalando.net/)">CP&amp;T uses this</a></li>
+<li>[Labeling Job Link] - i.e. link to SageMaker Ground Truth job</li>
+<li>[Active DPRs] - i.e. corresponding <a href="https://docs.google.com/document/d/1pmvNYNcWDbyj3YknuCWvzJQJdhqeiS6Xs5Z2P63XrcE">DPR tickets</a><ul>
+<li>[DPR 1 Link]</li>
+<li>[DPR 2 Link]</li>
+</ul>
+</li>
+</ul>
+<h2 id="authorship">Authorship<a class="headerlink" href="#authorship" title="Permanent link">&para;</a></h2>
+<h3 id="authors_1">Author(s)<a class="headerlink" href="#authors_1" title="Permanent link">&para;</a></h3>
+<!-- scope: microscope -->
+<!-- info: **If** they were not all covered in the overview
+(i.e. when there are more than 5 authors), provide the details
+of all authors here:
+-->
+
+<ul>
+<li><strong>Name, Team:</strong> (Owner / Contributor / Manager / etc.)</li>
+<li><strong>Name, Team:</strong> (Owner / Contributor / Manager / etc.)</li>
+</ul>
+<h3 id="dataset-owners">Dataset Owners<a class="headerlink" href="#dataset-owners" title="Permanent link">&para;</a></h3>
+<h4 id="contact-details">Contact Detail(s)<a class="headerlink" href="#contact-details" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: Provide more information about dataset ownership: -->
+<ul>
+<li><strong>Main point of contact:</strong> Provide the name and email address of the main point of contact</li>
+<li><strong>Team:</strong> Provide the team name and email address for the dataset owner team</li>
+<li><strong>Affiliation:</strong> Provide the affiliation including team and company or university of the dataset owners (e.g. Size and Fit, Zalando SE)</li>
+<li><strong>Team Website:</strong> Provide a link to the website for the dataset owner team</li>
+</ul>
+<h3 id="funding-sources">Funding Sources<a class="headerlink" href="#funding-sources" title="Permanent link">&para;</a></h3>
+<p>&lt;&ndash; info: Use these sections if relevant.</p>
+<p>For example, this may be relevant if it is funded by an
+NGO and has specific requirements and restriction for use
+of the data. Providing information as such allows us to
+avoid inappropriate downstream use of the data. &ndash;&gt;</p>
+<h4 id="institutions">Institution(s)<a class="headerlink" href="#institutions" title="Permanent link">&para;</a></h4>
+<!-- scope: telescope -->
+<!-- info: Provide the names of the funding institution(s): -->
+<ul>
+<li>Name of Institution</li>
+<li>Name of Institution</li>
+<li>Name of Institution</li>
+</ul>
+<h4 id="funding-or-grant-summaryies">Funding or Grant Summary(ies)<a class="headerlink" href="#funding-or-grant-summaryies" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- width: full -->
+<!-- info: Provide a short summary of programs or projects that may have funded
+the creation, collection, or curation of the dataset.
+
+Use additional notes to capture any other relevant information or
+considerations. -->
+<p><em>For example, Institution 1 and institution 2 jointly funded this dataset as a
+part of the XYZ data program, funded by XYZ grant awarded by institution 3 for
+the years YYYY-YYYY.</em></p>
+<p>Summarize here. Link to documents if available.</p>
+<p><strong>Additional Notes:</strong> Add here</p>
+<h3 id="publishers">Publishers<a class="headerlink" href="#publishers" title="Permanent link">&para;</a></h3>
+<!-- info: Skip/Remove section if dataset not intended for third party usage: -->
+
+<h4 id="publishing-organizations">Publishing Organization(s)<a class="headerlink" href="#publishing-organizations" title="Permanent link">&para;</a></h4>
+<!-- scope: telescope -->
+<!-- info: Provide the names of the institution or organization responsible
+for publishing the dataset: -->
+<p>Organization Name</p>
+<h4 id="industry-types">Industry Type(s)<a class="headerlink" href="#industry-types" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: Select **all applicable** industry types to which the publishing
+organizations belong: -->
+<ul>
+<li>Corporate - Tech</li>
+<li>Corporate - Non-Tech (please specify)</li>
+<li>Academic - Tech</li>
+<li>Academic - Non-Tech (please specify)</li>
+<li>Not-for-profit - Tech</li>
+<li>Not-for-profit - Non-Tech (please specify)</li>
+<li>Individual (please specify)</li>
+<li>Others (please specify)</li>
+</ul>
+<h4 id="contact-details_1">Contact Detail(s)<a class="headerlink" href="#contact-details_1" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: Provide publisher contact details: -->
+<ul>
+<li><strong>Publishing POC:</strong> Provide the name for a POC for this dataset&rsquo;s publishers</li>
+<li><strong>Affiliation:</strong> Provide the POC&rsquo;s institutional affiliation</li>
+<li><strong>Contact:</strong> Provide the POC&rsquo;s contact details</li>
+<li><strong>Mailing List:</strong> Provide a mailing list if available</li>
+<li><strong>Website:</strong> Provide a website for the dataset if available</li>
+</ul>
+<h2 id="dataset-overview">Dataset Overview<a class="headerlink" href="#dataset-overview" title="Permanent link">&para;</a></h2>
+<h4 id="primary-data-modality">Primary Data Modality<a class="headerlink" href="#primary-data-modality" title="Permanent link">&para;</a></h4>
+<!-- scope: telescope -->
+<!-- info: Select the modality(ies) that best describe a typical data point
+(see http://www.trustworthymachinelearning.com/trustworthymachinelearning-04.htm,
+section 4.1, for a definition of data modality): -->
+<ul>
+<li>Image Data</li>
+<li>Text Data</li>
+<li>Tabular Data</li>
+<li>Audio Data</li>
+<li>Video Data</li>
+<li>Time Series</li>
+<li>Graph Data</li>
+<li>Geospatial Data</li>
+<li>Multimodal (please specify)</li>
+<li>Unknown</li>
+<li>Others (please specify)</li>
+</ul>
+<h4 id="data-subjects">Data Subject(s)<a class="headerlink" href="#data-subjects" title="Permanent link">&para;</a></h4>
+<!-- scope: telescope -->
+<!-- info: Select ***all applicable**** subjects contained the dataset: -->
+<ul>
+<li>Sensitive Data about people</li>
+<li>Non-Sensitive Data about people</li>
+<li>Data about natural phenomena</li>
+<li>Data about places and objects</li>
+<li>Synthetically generated data</li>
+<li>Data about systems or products and their behaviors</li>
+<li>Unknown</li>
+<li>Others (Please specify)</li>
+</ul>
+<h4 id="dataset-description">Dataset Description<a class="headerlink" href="#dataset-description" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: A description of the dataset going beyond what was described in
+the data summary in the overview section at the top of the data card.
+
+Use this section only if it adds value.
+-->
+
+<h4 id="data-point-description">Data Point Description<a class="headerlink" href="#data-point-description" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: Provide a short description of the content in a data point: -->
+
+<p>Add description here.</p>
+<p>See the <a href="#example-of-data-points">Examples of Data Points</a> section for examples.</p>
+<h3 id="dataset-statistics">Dataset Statistics<a class="headerlink" href="#dataset-statistics" title="Permanent link">&para;</a></h3>
+<!-- scope: periscope -->
+<!-- info: Provide statistics of the dataset:<br><br>(Add or remove fields
+based on which fields you think are most important for data card
+consumers to read about at a glance.
+Use the additional notes to include relevant information, considerations,
+and links to table(s) with more detailed breakdowns.) -->
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Size of Dataset</td>
+<td>123456 MB</td>
+</tr>
+<tr>
+<td>Number of Data Points</td>
+<td>123456</td>
+</tr>
+<tr>
+<td>Number of Data Points with Missing Data</td>
+<td>12324152</td>
+</tr>
+<tr>
+<td>Number of Labels</td>
+<td>123456789</td>
+</tr>
+<tr>
+<td>Algorithmic Labels</td>
+<td>123456789</td>
+</tr>
+<tr>
+<td>Protected Attribute Labels</td>
+<td>123456789</td>
+</tr>
+<tr>
+<td>Other Characteristics</td>
+<td>123456</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Above:</strong> Provide a caption for the above table of visualization.</p>
+<p><strong>Additional Notes:</strong> Add here.</p>
+<h3 id="tables-and-fields">Tables and Fields<a class="headerlink" href="#tables-and-fields" title="Permanent link">&para;</a></h3>
+<!-- width: full -->
+<!-- scope: microscope -->
+<!-- info: List the dataset fields and their descriptions.
+**Do not create a second source of truth.**  If information about tables already
+exists (for example, in Collibra), provide a link to it.
+
+If there are many tables to describe,
+a data card might not be the best place to describe them all.  If there is
+no other table schematization tool being used, consider adding only the
+most relevant info here if it's likely not to change.
+
+For `Type` use [python typing standards](https://docs.python.org/3/library/typing.html).
+
+Note, figures are worth 1000 tables. When possible, default
+to using figures such as histograms over statistical tables.
+-->
+
+<h4 id="table-name_of_table_1">TABLE: name_of_table_1<a class="headerlink" href="#table-name_of_table_1" title="Permanent link">&para;</a></h4>
+<!-- width: full -->
+<ul>
+<li><strong>Primary Key:</strong> &hellip;</li>
+<li><strong>Description:</strong> &hellip;</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Field Name</td>
+<td>Type</td>
+<td>Description</td>
+</tr>
+<tr>
+<td>Field Name</td>
+<td>Type</td>
+<td>Description</td>
+</tr>
+<tr>
+<td>Field Name</td>
+<td>Type</td>
+<td>Description</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Above:</strong> Provide a caption for the above table or visualization if used.</p>
+<p><strong>Additional Notes:</strong> Add here including reference to the
+<a href="#sensitive-and-protected-attributes">sensitive and protected attributes</a> section,
+when relevant.</p>
+<table>
+<thead>
+<tr>
+<th>Statistic</th>
+<th>Field Name</th>
+<th>Field Name</th>
+<th>Field Name</th>
+<th>Field Name</th>
+<th>Field Name</th>
+<th>Field Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>count</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>mean</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>std</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>min</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>25%</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>50%</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>75%</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>max</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>mode</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Additional Notes:</strong> Add here.</p>
+<hr />
+<h4 id="table-name_of_table_2">TABLE: name_of_table_2<a class="headerlink" href="#table-name_of_table_2" title="Permanent link">&para;</a></h4>
+<!-- width: full -->
+<ul>
+<li><strong>Primary Key:</strong> &hellip;</li>
+<li><strong>Description:</strong> &hellip;</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Field Name</td>
+<td>Type</td>
+<td>Description</td>
+</tr>
+<tr>
+<td>Field Name</td>
+<td>Type</td>
+<td>Description</td>
+</tr>
+<tr>
+<td>Field Name</td>
+<td>Type</td>
+<td>Description</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Above:</strong> Provide a caption for the above table or visualization if used.</p>
+<p><strong>Additional Notes:</strong> Add here including reference to the
+<a href="#sensitive-and-protected-attributes">sensitive and protected attributes</a> section,
+when relevant.</p>
+<table>
+<thead>
+<tr>
+<th>Statistic</th>
+<th>Field Name</th>
+<th>Field Name</th>
+<th>Field Name</th>
+<th>Field Name</th>
+<th>Field Name</th>
+<th>Field Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>count</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>mean</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>std</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>min</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>25%</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>50%</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>75%</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>max</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>mode</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Additional Notes:</strong> Add here.</p>
+<h3 id="dataset-version-and-maintenance">Dataset Version and Maintenance<a class="headerlink" href="#dataset-version-and-maintenance" title="Permanent link">&para;</a></h3>
+<h4 id="version-details">Version Details<a class="headerlink" href="#version-details" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: Provide details about the current data version
+and which data version the current data card corresponds to.
+
+For datasets without version number, use "Not currently tracked"
+but be sure to track the release date of the data.
+
+
+<div class="codehilite"><pre><span></span><code>**Current Data Version:** Not currently tracked
+
+**Data Version Release Date:** 05/03/2023
+
+**Data Version for last Data Card Update:** N/A
+
+**Last Data Card Update:** 10/03/2023
+</code></pre></div>
+
+
+-->
+<p><strong>Current Data Version:</strong> 1.0</p>
+<p><strong>Data Version Release Date:</strong> DD/MM/YYYY</p>
+<p><strong>Data Version for last Data Card Update:</strong> 1.0</p>
+<p><strong>Last Data Card Update:</strong> DD/MM/YYYY (same as in data overview at top)</p>
+<h4 id="data-change-log">Data Change Log<a class="headerlink" href="#data-change-log" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<p>Link to change log (if exists)</p>
+<h4 id="maintenance-plan">Maintenance Plan<a class="headerlink" href="#maintenance-plan" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: Summarize the maintenance plan for the dataset:
+
+Use additional notes to capture any other relevant information or
+considerations. -->
+<p>Summarize here. Include links and metrics where applicable.</p>
+<p><strong>Versioning:</strong> Summarize here. Include information about criteria for
+versioning the dataset.</p>
+<p><strong>Updates:</strong> Summarize here. Include information about criteria for refreshing
+or updating the dataset.</p>
+<p><strong>Errors:</strong> Summarize here. Include information about criteria for refreshing
+or updating the dataset.</p>
+<p><strong>Feedback:</strong> Summarize here. Include information about criteria for refreshing
+or updating the dataset.</p>
+<p><strong>Additional Notes:</strong> Add here</p>
+<h4 id="next-planned-updates">Next Planned Update(s)<a class="headerlink" href="#next-planned-updates" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: Provide details about the next planned update:
+For datasets that are not currently version controlled or
+under active development that are not yet stable,
+this section could be filled in as follows:
+
+
+<div class="codehilite"><pre><span></span><code>**Version affected:** Not currently tracked
+
+**Next data update:** Ongoing until version 1.0.0 released
+
+**Next version:** 1.0.0
+
+**Next version update:** 04/2029 (expected first stable dataset release,
+                                  ie. version 1.0.0)
+</code></pre></div>
+
+
+
+-->
+<p><strong>Version affected:</strong> 1.0</p>
+<p><strong>Next data update:</strong> MM/YYYY</p>
+<p><strong>Next version:</strong> 1.1</p>
+<p><strong>Next version update:</strong> MM/YYYY</p>
+<h4 id="expected-changes">Expected Change(s)<a class="headerlink" href="#expected-changes" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: Summarize the updates to the dataset and/or data that are expected
+on the next update.
+
+Use additional notes to capture any other relevant information or
+considerations. -->
+<p><strong>Updates to Data:</strong> Summarize here. Include links, charts, and visualizations
+as appropriate.</p>
+<p><strong>Updates to Dataset:</strong> Summarize here. Include links, charts, and
+visualizations as appropriate.</p>
+<p><strong>Additional Notes:</strong> Add here</p>
+<h2 id="example-of-data-points">Example of Data Points<a class="headerlink" href="#example-of-data-points" title="Permanent link">&para;</a></h2>
+<!-- info: Show representative examples of different
+types of data points.-->
+
+<h4 id="sampling-of-data-points">Sampling of Data Points<a class="headerlink" href="#sampling-of-data-points" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: Provide link(s) to data points OR
+a link to an exploratory demo if one exists -->
+<ul>
+<li>Typical Data Point Link</li>
+<li>Outlier Data Point Link</li>
+<li>Other Data Point Link</li>
+<li>Other Data Point Link</li>
+</ul>
+<h4 id="typical-data-point">Typical Data Point<a class="headerlink" href="#typical-data-point" title="Permanent link">&para;</a></h4>
+<!-- width: half -->
+<!-- info: Provide an example of a typical data point and describe what makes
+it typical.
+
+**Use additional notes to capture any other relevant information or
+considerations.** -->
+<p>Summarize here. Include any criteria for typicality of data point.</p>
+<div class="codehilite"><pre><span></span><code>{&#39;q_id&#39;: &#39;8houtx&#39;,
+  &#39;title&#39;: &#39;Why does water heated to room temperature feel colder than the air around it?&#39;,
+  &#39;selftext&#39;: &#39;&#39;,
+  &#39;document&#39;: &#39;&#39;,
+  &#39;subreddit&#39;: &#39;explainlikeimfive&#39;,
+  &#39;answers&#39;: {&#39;a_id&#39;: [&#39;dylcnfk&#39;, &#39;dylcj49&#39;],
+  &#39;text&#39;: [&quot;Water transfers heat more efficiently than air. When something feels cold it&#39;s because heat is being transferred from your skin to whatever you&#39;re touching. ... Get out of the water and have a breeze blow on you while you&#39;re wet, all of the water starts evaporating, pulling even more heat from you.&quot;],
+  &#39;score&#39;: [5, 2]},
+  &#39;title_urls&#39;: {&#39;url&#39;: []},
+  &#39;selftext_urls&#39;: {&#39;url&#39;: []},
+  &#39;answers_urls&#39;: {&#39;url&#39;: []}}
+</code></pre></div>
+
+<p><strong>Additional Notes:</strong> Add here</p>
+<h4 id="atypical-data-point">Atypical Data Point<a class="headerlink" href="#atypical-data-point" title="Permanent link">&para;</a></h4>
+<!-- width: half -->
+<!-- info: Provide an example of an outlier data point and describe what makes
+it atypical.
+
+**Use additional notes to capture any other relevant information or
+considerations.** -->
+<p>Summarize here. Include any criteria for atypicality of data point.</p>
+<div class="codehilite"><pre><span></span><code>{&#39;q_id&#39;: &#39;8houtx&#39;,
+  &#39;title&#39;: &#39;Why does water heated to room temperature feel colder than the air around it?&#39;,
+  &#39;selftext&#39;: &#39;&#39;,
+  &#39;document&#39;: &#39;&#39;,
+  &#39;subreddit&#39;: &#39;explainlikeimfive&#39;,
+  &#39;answers&#39;: {&#39;a_id&#39;: [&#39;dylcnfk&#39;, &#39;dylcj49&#39;],
+  &#39;text&#39;: [&quot;Water transfers heat more efficiently than air. When something feels cold it&#39;s because heat is being transferred from your skin to whatever you&#39;re touching. ... Get out of the water and have a breeze blow on you while you&#39;re wet, all of the water starts evaporating, pulling even more heat from you.&quot;],
+  &#39;score&#39;: [5, 2]},
+  &#39;title_urls&#39;: {&#39;url&#39;: []},
+  &#39;selftext_urls&#39;: {&#39;url&#39;: []},
+  &#39;answers_urls&#39;: {&#39;url&#39;: []}}
+</code></pre></div>
+
+<p><strong>Additional Notes:</strong> Add here</p>
+<h2 id="purpose-and-motivations">Purpose and Motivations<a class="headerlink" href="#purpose-and-motivations" title="Permanent link">&para;</a></h2>
+<!-- info: This section focuses on the initial reasons why the
+dataset was curated / created, and should be written from the point
+of view of the dataset developers before and during its creation.
+
+For current usage guidelines, see the section.
+-->
+
+<h3 id="intended-purposes">Intended Purpose(s)<a class="headerlink" href="#intended-purposes" title="Permanent link">&para;</a></h3>
+<!-- scope: telescope -->
+<!-- info: Select the original intended purposes of creating or
+curating this dataset-->
+<ul>
+<li>Monitoring</li>
+<li>Research</li>
+<li>Evaluation</li>
+<li>Production</li>
+<li>Others (please specify)</li>
+</ul>
+<h3 id="motivating-factors">Motivating Factor(s)<a class="headerlink" href="#motivating-factors" title="Permanent link">&para;</a></h3>
+<!-- scope: microscope -->
+<!-- info: List the primary motivations for creating or curating this dataset:
+
+(Usage Note: use this to describe the problem space and corresponding
+motivations for the dataset.) -->
+<p>For example:</p>
+<ul>
+<li>Bringing demographic diversity to imagery training data for object-detection models</li>
+<li>Encouraging academics to take on second-order challenges of cultural representation in object detection</li>
+</ul>
+<p>Summarize motivation here. Include links where relevant.</p>
+<h3 id="intended-use">Intended Use<a class="headerlink" href="#intended-use" title="Permanent link">&para;</a></h3>
+<h4 id="dataset-uses">Dataset Use(s)<a class="headerlink" href="#dataset-uses" title="Permanent link">&para;</a></h4>
+<!-- scope: telescope -->
+<!-- info: Select **one**: -->
+<ul>
+<li>Safe for production use</li>
+<li>Safe for research use</li>
+<li>Conditional use - some unsafe applications</li>
+<li>Only approved use</li>
+<li>Others (please specify)</li>
+</ul>
+<h4 id="suitable-use-cases">Suitable Use Case(s)<a class="headerlink" href="#suitable-use-cases" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: Summarize known suitable and intended use cases of this dataset.
+
+Use additional notes to capture any specific patterns that readers should
+look out for, or other relevant information or considerations. -->
+<p><strong>Suitable Use Case:</strong> Summarize here. Include links where necessary.</p>
+<p><strong>Suitable Use Case:</strong> Summarize here. Include links where necessary.</p>
+<p><strong>Suitable Use Case:</strong> Summarize here. Include links where necessary.</p>
+<p><strong>Additional Notes:</strong> Add here</p>
+<h4 id="unsuitable-use-cases">Unsuitable Use Case(s)<a class="headerlink" href="#unsuitable-use-cases" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: Summarize known unsuitable and unintended use cases of this dataset.
+
+Use additional notes to capture any specific patterns that readers should look
+out for, or other relevant information or considerations. -->
+<p><strong>Unsuitable Use Case:</strong> Summarize here. Include links where necessary.</p>
+<p><strong>Unsuitable Use Case:</strong> Summarize here. Include links where necessary.</p>
+<p><strong>Unsuitable Use Case:</strong> Summarize here. Include links where necessary.</p>
+<p><strong>Additional Notes:</strong> Add here</p>
+<h4 id="research-and-problem-spaces">Research and Problem Space(s)<a class="headerlink" href="#research-and-problem-spaces" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: Provide a description of the specific problem space that this
+dataset intends to address. -->
+<p>Summarize here. Include any specific research questions.</p>
+<h2 id="information-for-usage">Information for Usage<a class="headerlink" href="#information-for-usage" title="Permanent link">&para;</a></h2>
+<!-- info: Information about dataset for others that
+want to use this dataset. -->
+
+<h3 id="usage-guidelines">Usage Guideline(s)<a class="headerlink" href="#usage-guidelines" title="Permanent link">&para;</a></h3>
+<!-- scope: microscope -->
+<!-- info: Summarize usage guidelines or policies that consumers should be
+aware of.
+
+Use additional notes to capture any other relevant information or
+considerations. -->
+<p><strong>Usage Guidelines:</strong> Summarize here. Include links where necessary.</p>
+<p><strong>Approval Steps:</strong> Summarize here. Include links where necessary.</p>
+<p><strong>Reviewer:</strong> Provide the name of a reviewer for publications referencing
+this dataset.</p>
+<p><strong>Additional Notes:</strong> Add here</p>
+<h3 id="use-with-other-data">Use with Other Data<a class="headerlink" href="#use-with-other-data" title="Permanent link">&para;</a></h3>
+<h4 id="safety-level">Safety Level<a class="headerlink" href="#safety-level" title="Permanent link">&para;</a></h4>
+<!-- scope: telescope -->
+<!-- info: Select **one**: -->
+<ul>
+<li>Safe to use with other data</li>
+<li>Conditionally safe to use with other data</li>
+<li>Should not be used with other data</li>
+<li>Unknown</li>
+<li>Others (please specify)</li>
+</ul>
+<h4 id="best-practices">Best Practices<a class="headerlink" href="#best-practices" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: Summarize best practices for using this dataset with other datasets
+or data types.
+
+Use additional notes to capture any other relevant information or
+considerations. -->
+<p>Summarize here. Include visualizations, metrics, demonstrative examples,
+or links where necessary.</p>
+<p><strong>Additional Notes:</strong> Add here</p>
+<h3 id="forking-and-sampling">Forking and Sampling<a class="headerlink" href="#forking-and-sampling" title="Permanent link">&para;</a></h3>
+<h4 id="safety-level_1">Safety Level<a class="headerlink" href="#safety-level_1" title="Permanent link">&para;</a></h4>
+<!-- scope: telescope -->
+<!-- info: Select **one**: -->
+<ul>
+<li>Safe to fork and/or sample</li>
+<li>Conditionally safe to fork and/or sample</li>
+<li>Should not be forked and/or sampled</li>
+<li>Unknown</li>
+<li>Others (please specify)</li>
+</ul>
+<h4 id="acceptable-sampling-methods">Acceptable Sampling Method(s)<a class="headerlink" href="#acceptable-sampling-methods" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: Select **all applicable** acceptable methods to sample this
+dataset: -->
+<ul>
+<li>Cluster Sampling</li>
+<li>Haphazard Sampling</li>
+<li>Multi-stage sampling</li>
+<li>Random Sampling</li>
+<li>Retrospective Sampling</li>
+<li>Stratified Sampling</li>
+<li>Systematic Sampling</li>
+<li>Weighted Sampling</li>
+<li>Unknown</li>
+<li>Unsampled</li>
+<li>Others (please specify)</li>
+</ul>
+<h4 id="best-practices_1">Best Practice(s)<a class="headerlink" href="#best-practices_1" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: Summarize the best practices for forking or sampling this dataset.
+
+Use additional notes to capture any other relevant information or
+considerations. -->
+<p>Summarize here. Include links, figures, and demonstrative examples where
+available.</p>
+<p><strong>Additional Notes:</strong> Add here</p>
+<h4 id="risks-and-mitigations">Risk(s) and Mitigation(s)<a class="headerlink" href="#risks-and-mitigations" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: Fill this out if you selected "Conditionally safe to fork and/or
+sample" or "Should not be forked and/or sampled":
+
+Summarize known or residual risks associated with forking and sampling methods
+when applied to the dataset.
+
+Use additional notes to capture any other
+relevant information or considerations. -->
+<p>Summarize here. Include links and metrics where applicable.</p>
+<p><strong>Risk Type:</strong> [Description + Mitigations]</p>
+<p><strong>Risk Type:</strong> [Description + Mitigations]</p>
+<p><strong>Risk Type:</strong> [Description + Mitigations]</p>
+<p><strong>Additional Notes:</strong> Add here</p>
+<h4 id="limitations-and-recommendations">Limitation(s) and Recommendation(s)<a class="headerlink" href="#limitations-and-recommendations" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: Fill this out if you selected "Conditionally safe to fork and/or
+sample" or "Should not be forked and/or sample":
+
+Summarize the limitations that the dataset introduces when forking
+or sampling the dataset and corresponding recommendations.
+
+Use additional notes to capture any other relevant information or
+considerations. -->
+<p>Summarize here. Include links and metrics where applicable.</p>
+<p><strong>Limitation Type:</strong> [Description + Recommendation]</p>
+<p><strong>Limitation Type:</strong> [Description + Recommendation]</p>
+<p><strong>Limitation Type:</strong> [Description + Recommendation]</p>
+<p><strong>Additional Notes:</strong> Add here</p>
+<h3 id="notable-features">Notable Feature(s)<a class="headerlink" href="#notable-features" title="Permanent link">&para;</a></h3>
+<!-- scope: periscope -->
+<!-- info: Describe any notable feature distributions or relationships between
+individual data points made explicit.
+
+Include links to servers where readers can explore the data on their own. -->
+
+<p><strong>Exploration Demo:</strong> [Link to server or demo.]</p>
+<p><strong>Notable Field Name:</strong> Describe here. Include links, data examples, metrics,
+visualizations where relevant.</p>
+<p><strong>Above:</strong> Provide a caption for the above table or visualization.</p>
+<p><strong>Additional Notes:</strong> Add here</p>
+<h3 id="distributions">Distribution(s)<a class="headerlink" href="#distributions" title="Permanent link">&para;</a></h3>
+<!-- scope: periscope -->
+<!-- info: Describe the recommended splits and corresponding criteria.
+
+Use additional notes to capture any other
+relevant information or considerations. -->
+
+<table>
+<thead>
+<tr>
+<th>Set</th>
+<th>Recommended number of data points</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Train</td>
+<td>62,563</td>
+</tr>
+<tr>
+<td>Test</td>
+<td>62,563</td>
+</tr>
+<tr>
+<td>Validation</td>
+<td>62,563</td>
+</tr>
+<tr>
+<td>Dev</td>
+<td>62,563</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Above:</strong> Provide a caption for the above table or visualization.</p>
+<p><strong>Additional Notes:</strong> Add here</p>
+<h3 id="known-correlations">Known Correlation(s)<a class="headerlink" href="#known-correlations" title="Permanent link">&para;</a></h3>
+<!-- scope: microscope -->
+<!-- info: Summarize any known correlations with
+the indicated features in this dataset.
+
+Use additional notes to capture any other
+relevant information or considerations.
+
+(Usage Note: Duplicate for each known
+correlation.) -->
+<p><code>field_name</code>, <code>field_name</code></p>
+<p><strong>Description:</strong> Summarize here. Include
+visualizations, metrics, or links where
+necessary.</p>
+<p><strong>Impact on dataset use:</strong> Summarize here.
+Include visualizations, metrics, or links
+where necessary.</p>
+<p><strong>Risks from correlation:</strong> Summarize here.
+Include recommended mitigative steps if
+available.</p>
+<p><strong>Additional Notes:</strong> Add here</p>
+<h3 id="split-statistics">Split Statistics<a class="headerlink" href="#split-statistics" title="Permanent link">&para;</a></h3>
+<!-- scope: periscope -->
+<!-- width: full -->
+<!-- info: Provide the sizes of each split. As appropriate, provide any
+descriptive statistics for features. -->
+
+<table>
+<thead>
+<tr>
+<th>Statistic</th>
+<th>Train</th>
+<th>Test</th>
+<th>Valid</th>
+<th>Dev</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Count</td>
+<td>123456</td>
+<td>123456</td>
+<td>123456</td>
+<td>123456</td>
+</tr>
+<tr>
+<td>Descriptive Statistic</td>
+<td>123456</td>
+<td>123456</td>
+<td>123456</td>
+<td>123456</td>
+</tr>
+<tr>
+<td>Descriptive Statistic</td>
+<td>123456</td>
+<td>123456</td>
+<td>123456</td>
+<td>123456</td>
+</tr>
+<tr>
+<td>Descriptive Statistic</td>
+<td>123456</td>
+<td>123456</td>
+<td>123456</td>
+<td>123456</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Above:</strong> Caption for table above.</p>
+<h3 id="citation-guidelines">Citation Guidelines<a class="headerlink" href="#citation-guidelines" title="Permanent link">&para;</a></h3>
+<!-- scope: microscope -->
+<!-- info: Provide guidelines and steps for citing this dataset in research
+and/or production.
+
+For research cases, provide a BiBTeX record (see template below).
+
+For non research cases, we suggest others reference the dataset by
+providing a link to this data card (or comparable data documentation).
+
+Use additional notes to capture any specific patterns that readers should look
+out for, or other relevant information or considerations. -->
+
+<p><strong>Guidelines:</strong> Summarize citation guidelines with link to data documentation (i.e this data card).</p>
+<p><strong>BiBTeX:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="nv">@article</span><span class="err">{</span><span class="n">kuznetsova2020open</span><span class="p">,</span>
+<span class="w">  </span><span class="n">title</span><span class="o">=</span><span class="err">{</span><span class="n">The</span><span class="w"> </span><span class="k">open</span><span class="w"> </span><span class="n">images</span><span class="w"> </span><span class="n">dataset</span><span class="w"> </span><span class="n">v4</span><span class="err">}</span><span class="p">,</span>
+<span class="w">  </span><span class="n">author</span><span class="o">=</span><span class="err">{</span><span class="n">Kuznetsova</span><span class="p">,</span><span class="w"> </span><span class="n">Alina</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">Rom</span><span class="p">,</span><span class="w"> </span><span class="n">Hassan</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">Alldrin</span><span class="p">,</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">others</span><span class="err">}</span><span class="p">,</span>
+<span class="w">  </span><span class="n">journal</span><span class="o">=</span><span class="err">{</span><span class="n">International</span><span class="w"> </span><span class="n">Journal</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="n">Computer</span><span class="w"> </span><span class="n">Vision</span><span class="err">}</span><span class="p">,</span>
+<span class="w">  </span><span class="n">volume</span><span class="o">=</span><span class="err">{</span><span class="mi">128</span><span class="err">}</span><span class="p">,</span>
+<span class="w">  </span><span class="n">number</span><span class="o">=</span><span class="err">{</span><span class="mi">7</span><span class="err">}</span><span class="p">,</span>
+<span class="w">  </span><span class="n">pages</span><span class="o">=</span><span class="err">{</span><span class="mi">1956</span><span class="o">--</span><span class="mi">1981</span><span class="err">}</span><span class="p">,</span>
+<span class="w">  </span><span class="nf">year</span><span class="o">=</span><span class="err">{</span><span class="mi">2020</span><span class="err">}</span><span class="p">,</span>
+<span class="w">  </span><span class="n">publisher</span><span class="o">=</span><span class="err">{</span><span class="n">Springer</span><span class="err">}</span>
+<span class="err">}</span>
+</code></pre></div>
+
+<p><strong>Additional Notes:</strong> Add here</p>
+<h2 id="known-usages">Known Usages<a class="headerlink" href="#known-usages" title="Permanent link">&para;</a></h2>
+<!-- info: Fill out the following section if the dataset has any
+current known usages.
+-->
+<h4 id="modelss">Models(s)<a class="headerlink" href="#modelss" title="Permanent link">&para;</a></h4>
+<!-- scope: telescope -->
+<!-- info: Provide a table of known models
+that use this dataset.
+-->
+
+<table>
+<thead>
+<tr>
+<th><strong>Model</strong></th>
+<th><strong>Model Task</strong></th>
+<th><strong>Purpose of Dataset Usage</strong></th>
+<th><strong><a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai">AI Act Risk</a></strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="">Model 1</a></td>
+<td>Image Segmentation</td>
+<td>Fairness Evaluation</td>
+<td>Limited</td>
+</tr>
+<tr>
+<td><a href="">Model 2</a></td>
+<td>Skin Tone Classifier</td>
+<td>Training and Validation</td>
+<td>Limited</td>
+</tr>
+</tbody>
+</table>
+<p>Note, this table may not be exhaustive. Dataset users and documentation consumers at large
+are highly encouraged to contribute known usages.</p>
+<h4 id="applications">Application(s)<a class="headerlink" href="#applications" title="Permanent link">&para;</a></h4>
+<!-- scope: telescope -->
+<!-- info: Provide a table of known AI/ML systems
+that use this dataset.
+-->
+
+<table>
+<thead>
+<tr>
+<th><strong>Application</strong></th>
+<th><strong>Brief Description</strong></th>
+<th><strong>Purpose of Dataset Usage</strong></th>
+<th><strong><a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai">AI Act Risk</a></strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="">Application 1</a></td>
+<td>Size and Fit Recommendations</td>
+<td>Fairness Evaluation of multiple models and end to end application pipeline</td>
+<td>Limited</td>
+</tr>
+</tbody>
+</table>
+<p>Note, this table may not be exhaustive. Dataset users and documentation consumers at large
+are highly encouraged to contribute known usages.</p>
+<h2 id="access-retention-and-deletion">Access, Retention, and Deletion<a class="headerlink" href="#access-retention-and-deletion" title="Permanent link">&para;</a></h2>
+<!-- info: NEEDS INPUT FROM PRIV-GOV! -->
+<h3 id="access">Access<a class="headerlink" href="#access" title="Permanent link">&para;</a></h3>
+<h4 id="relevant-links_1">Relevant Links<a class="headerlink" href="#relevant-links_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>[S3 Bucket]</li>
+<li>[DPR]</li>
+<li>[ROPA]</li>
+<li>[Collibra Page]</li>
+</ul>
+<h4 id="data-security-classification">Data Security Classification<a class="headerlink" href="#data-security-classification" title="Permanent link">&para;</a></h4>
+<!-- scope: telescope -->
+<!-- info: Select **one**: Use Zalando data access classification
+standards:
+see https://docs.google.com/document/d/1j-khhbdOf2Fqyh2JlSC_82nA9KvyBOfdezftKOkPQ38/edit#heading=h.147n2zr -->
+<ul>
+<li>Green</li>
+<li>Yellow</li>
+<li>Orange</li>
+<li>Red</li>
+<li>Others (please specify)</li>
+</ul>
+<h4 id="prerequisites">Prerequisite(s)<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: Please describe any required training or prerequisites to access
+this dataset. -->
+<p>For example:</p>
+<p>This dataset requires membership in [specific] database groups:</p>
+<ul>
+<li>Complete the [Mandatory Training]</li>
+<li>Read [Data Usage Policy]</li>
+<li>Initiate a [Data Processing Request]</li>
+<li>Get AWS IAM role with S3 bucket access</li>
+<li>Add Databricks cluster or other technical users to correct roles</li>
+</ul>
+<h3 id="retention">Retention<a class="headerlink" href="#retention" title="Permanent link">&para;</a></h3>
+<h4 id="duration">Duration<a class="headerlink" href="#duration" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: Specify the duration for which this dataset can be retained: -->
+<p>Specify duration in days, months, or years.</p>
+<h4 id="reasons-for-duration">Reasons for Duration<a class="headerlink" href="#reasons-for-duration" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: Specify the reason for duration for which this dataset can be retained: -->
+<p><strong>Reason</strong></p>
+<h4 id="policy-summary">Policy Summary<a class="headerlink" href="#policy-summary" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: Summarize the retention policy for this dataset. -->
+<p><strong>Policy:</strong> Add a link to the policy if it&rsquo;s standardized at Zalando (i.e. S3 bucket standard retention policies).</p>
+<p><strong>Summary:</strong> Write summary here if link does not provide all information already.</p>
+<p><strong>Additional Notes:</strong> Add here</p>
+<h4 id="exceptions-and-exemptions">Exception(s) and Exemption(s)<a class="headerlink" href="#exceptions-and-exemptions" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: Summarize any exceptions and related steps to retain the dataset.
+Include links where necessary.
+
+Use additional notes to capture any other relevant information or
+considerations. -->
+<p><strong>Exemption Code:</strong> <code>ANONYMOUS_DATA</code> /
+<code>EMPLOYEE_DATA</code> / <code>PUBLIC_DATA</code> /
+<code>INTERNAL_BUSINESS_DATA</code> /
+<code>SIMULATED_TEST_DATA</code></p>
+<p><strong>Summary:</strong> Write summary and notes here.</p>
+<p><strong>Additional Notes:</strong> Add here</p>
+<h3 id="deletion">Deletion<a class="headerlink" href="#deletion" title="Permanent link">&para;</a></h3>
+<h4 id="deletion-event-summary">Deletion Event Summary<a class="headerlink" href="#deletion-event-summary" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: Summarize the sequence of events and allowable processing for data
+deletion.
+
+If there are too many events to list, or if this information
+is stored and managed elsewhere, do not
+create a second source of truth and simply provide a link instead.
+
+Use additional notes to capture any other relevant information or
+considerations. -->
+<p><strong>Sequence of deletion and processing events:</strong></p>
+<ul>
+<li>Summarize first event here</li>
+<li>Summarize second event here</li>
+<li>Summarize third event here</li>
+</ul>
+<p><strong>Additional Notes:</strong> Add here</p>
+<h4 id="acceptable-means-of-deletion">Acceptable Means of Deletion<a class="headerlink" href="#acceptable-means-of-deletion" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: List the acceptable means of deletion: -->
+<ul>
+<li>Write acceptable means of deletion</li>
+<li>Write acceptable means of deletion</li>
+<li>Write acceptable means of deletion</li>
+</ul>
+<h4 id="post-deletion-obligations">Post-Deletion Obligations<a class="headerlink" href="#post-deletion-obligations" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: Summarize the sequence of obligations after a deletion event.
+
+**Use additional notes to capture any other relevant information or
+considerations.** -->
+<p><strong>Sequence of post-deletion obligations:</strong></p>
+<ul>
+<li>Summarize first obligation here</li>
+<li>Summarize second obligation here</li>
+<li>Summarize third obligation here</li>
+</ul>
+<p><strong>Additional Notes:</strong> Add here</p>
+<h4 id="operational-requirements">Operational Requirement(s)<a class="headerlink" href="#operational-requirements" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: List any deletion integration operational requirements: -->
+<p><strong>Deletion Integration Operational Requirements:</strong></p>
+<ul>
+<li>Write first requirement here</li>
+<li>Write second requirement here</li>
+<li>Write third requirement here</li>
+</ul>
+<h4 id="exceptions-and-exemptions_1">Exceptions and Exemptions<a class="headerlink" href="#exceptions-and-exemptions_1" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: Summarize any exceptions and related steps to a deletion event.
+
+**Use additional notes to capture any other relevant information or
+considerations.** -->
+<p><strong>Policy Exception bug:</strong> [bug]</p>
+<p><strong>Summary:</strong> Write summary and notes here</p>
+<p><strong>Additional Notes:</strong> Add here</p>
+<h2 id="provenance">Provenance<a class="headerlink" href="#provenance" title="Permanent link">&para;</a></h2>
+<h3 id="collection">Collection<a class="headerlink" href="#collection" title="Permanent link">&para;</a></h3>
+<h4 id="methods-used">Method(s) Used<a class="headerlink" href="#methods-used" title="Permanent link">&para;</a></h4>
+<!-- scope: telescope -->
+<!-- info: Select **all applicable** methods used to collect data.
+
+Note on crowdsourcing, this covers the case where a crowd labels data
+(make sure the reference the [Annotations and Labeling](#annotations-and-labeling)
+section), or the case where a crowd is responsible for collecting and
+submitting data independently to form a collective dataset.
+-->
+<ul>
+<li>API</li>
+<li>Artificially generated</li>
+<li>Crowdsourced - Internal Employee</li>
+<li>Crowdsourced - External Paid</li>
+<li>Crowdsourced - Volunteer</li>
+<li>Vendor collection efforts</li>
+<li>Scraped or crawled</li>
+<li>Survey, forms, or polls</li>
+<li>Interviews, focus groups</li>
+<li>Scientific experiment</li>
+<li>Taken from other existing datasets</li>
+<li>Unknown</li>
+<li>To be determined</li>
+<li>Others (please specify)</li>
+</ul>
+<h4 id="methodology-details">Methodology Detail(s)<a class="headerlink" href="#methodology-details" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: Provide a description of each collection method used.
+
+Use additional notes to capture any other relevant information or
+considerations.
+
+(Usage Note: Duplicate and complete the following for collection method
+type.) -->
+<p><strong>Collection Type</strong></p>
+<p><strong>Source:</strong> Describe here. Include links where available.</p>
+<p><strong>Platform:</strong> [Platform Name], Describe platform here. Include links where relevant.</p>
+<p><strong>Is this source considered sensitive or high-risk?</strong> [Yes/No]</p>
+<p><strong>Dates of Collection:</strong> [MMM YYYY - MMM YYYY]</p>
+<p><strong>Update Frequency for collected data:</strong></p>
+<p><em>Usage Note: Select one for this collection type.</em></p>
+<ul>
+<li>Yearly</li>
+<li>Quarterly</li>
+<li>Monthly</li>
+<li>Biweekly</li>
+<li>Weekly</li>
+<li>Daily</li>
+<li>Hourly</li>
+<li>Static</li>
+<li>Others (please specify)</li>
+</ul>
+<p><strong>Additional Links for this collection:</strong></p>
+<p>See section on <a href="#access-retention-and-deletion">Access, Rention, and Deletion</a></p>
+<p><strong>Additional Notes:</strong> Add here</p>
+<h4 id="source-descriptions">Source Description(s)<a class="headerlink" href="#source-descriptions" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: Provide a description of each upstream source of data.
+
+Use additional notes to capture any other relevant information or
+considerations. -->
+<ul>
+<li><strong>Source:</strong> Describe here. Include links, data examples, metrics, visualizations where relevant.</li>
+<li><strong>Source:</strong> Describe here. Include links, data examples, metrics, visualizations where relevant.</li>
+<li><strong>Source:</strong> Describe here. Include links, data examples, metrics, visualizations where relevant.</li>
+</ul>
+<p><strong>Additional Notes:</strong> Add here</p>
+<h4 id="collection-cadence">Collection Cadence<a class="headerlink" href="#collection-cadence" title="Permanent link">&para;</a></h4>
+<!-- scope: telescope -->
+<!-- info: Select **all applicable**: -->
+<p><strong>Static:</strong> Data was collected once from single or multiple sources.</p>
+<p><strong>Streamed:</strong> Data is continuously acquired from single or multiple sources.</p>
+<p><strong>Dynamic:</strong> Data is updated regularly from single or multiple sources.</p>
+<p><strong>Others:</strong> Please specify</p>
+<h3 id="attribute-collection-criteria-and-integration">Attribute Collection Criteria and Integration<a class="headerlink" href="#attribute-collection-criteria-and-integration" title="Permanent link">&para;</a></h3>
+<h4 id="data-integration">Data Integration<a class="headerlink" href="#data-integration" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: List all fields collected from different sources, and specify if
+they were included or excluded from the dataset.
+
+Use additional notes to
+capture any other relevant information or considerations.
+
+(Usage Note: Duplicate and complete the following for each upstream
+source.)
+
+If included and excluded fields don't apply, just write a short
+summary about how data was integrated into this dataset from
+upstream sources.
+
+-->
+<p><strong>Source</strong></p>
+<p><strong>Included Fields</strong></p>
+<p>Data fields that were collected and are included in the dataset.</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Field Name</td>
+<td>Describe here. Include links, data examples, metrics, visualizations where relevant.</td>
+</tr>
+<tr>
+<td>Field Name</td>
+<td>Describe here. Include links, data examples, metrics, visualizations where relevant.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Additional Notes:</strong> Add here</p>
+<p><strong>Excluded Fields</strong></p>
+<p>Data fields that were collected but are excluded from the dataset.</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Field Name</td>
+<td>Describe here. Include links, data examples, metrics, visualizations where relevant.</td>
+</tr>
+<tr>
+<td>Field Name</td>
+<td>Describe here. Include links, data examples, metrics, visualizations where relevant.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Additional Notes:</strong> Add here</p>
+<h4 id="data-aggregation">Data Aggregation<a class="headerlink" href="#data-aggregation" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: Summarize how data from different sources or methods aggregated,
+processed, or connected.
+
+This section is not intended to discuss transformations, which are described
+in the transformations section.
+
+(Usage Note: Duplicate and complete the following for each source OR
+collection method.) -->
+<p><strong>[Aggregation step 1]:</strong> [<a href="">GitHub Repository Link</a>]</p>
+<p>Describe step 1.</p>
+<p><strong>[Aggregation step 2]:</strong> [<a href="">GitHub Repository Link</a>]</p>
+<p>Describe step 2.</p>
+<p>&hellip;</p>
+<h3 id="data-point-collection-criteria">Data Point Collection Criteria<a class="headerlink" href="#data-point-collection-criteria" title="Permanent link">&para;</a></h3>
+<h4 id="data-selection">Data Selection<a class="headerlink" href="#data-selection" title="Permanent link">&para;</a></h4>
+<!-- scope: telescope -->
+<!-- info: Summarize the data selection criteria.
+
+Use additional notes to capture any other relevant information or
+considerations. -->
+<ul>
+<li><strong>Collection Method of Source:</strong> Summarize data selection criteria here. Include links where available.</li>
+<li><strong>Collection Method of Source:</strong> Summarize data selection criteria here. Include links where available.</li>
+<li><strong>Collection Method of Source:</strong> Summarize data selection criteria here. Include links where available.</li>
+</ul>
+<p><strong>Additional Notes:</strong> Add here</p>
+<h4 id="data-inclusion">Data Inclusion<a class="headerlink" href="#data-inclusion" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: Summarize the data inclusion criteria.
+
+Use additional notes to capture any other relevant information or
+considerations. -->
+<ul>
+<li><strong>Collection Method of Source:</strong> Summarize data inclusion criteria here. Include links where available.</li>
+<li><strong>Collection Method of Source:</strong> Summarize data inclusion criteria here. Include links where available.</li>
+<li><strong>Collection Method of Source:</strong> Summarize data inclusion criteria here. Include links where available.</li>
+</ul>
+<p><strong>Additional Notes:</strong> Add here</p>
+<h4 id="data-exclusion">Data Exclusion<a class="headerlink" href="#data-exclusion" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: Summarize the data exclusion criteria.
+
+Use additional notes to capture any other relevant information or
+considerations. -->
+<ul>
+<li><strong>Collection Method of Source:</strong> Summarize data exclusion criteria here. Include links where available.</li>
+<li><strong>Collection Method of Source:</strong> Summarize data exclusion criteria here. Include links where available.</li>
+<li><strong>Collection Method of Source:</strong> Summarize data exclusion criteria here. Include links where available.</li>
+</ul>
+<p><strong>Additional Notes:</strong> Add here</p>
+<h3 id="relationship-to-source">Relationship to Source<a class="headerlink" href="#relationship-to-source" title="Permanent link">&para;</a></h3>
+<h4 id="use-and-utilityies">Use and Utility(ies)<a class="headerlink" href="#use-and-utilityies" title="Permanent link">&para;</a></h4>
+<!-- scope: telescope -->
+<!-- info: Describe how the resulting dataset is aligned with the purposes,
+motivations, or intended use of the upstream source(s).
+
+Use additional notes to capture any other relevant information or
+considerations.
+
+(Usage Note: Duplicate and complete the following for each source type.) -->
+<ul>
+<li><strong>Source Type:</strong> Summarize here. Include links where available.</li>
+<li><strong>Source Type:</strong> Summarize here. Include links where available.</li>
+<li><strong>Source Type:</strong> Summarize here. Include links where available.</li>
+</ul>
+<p><strong>Additional Notes:</strong> Add here</p>
+<h4 id="benefit-and-values">Benefit and Value(s)<a class="headerlink" href="#benefit-and-values" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: Summarize the benefits of the resulting dataset to its consumers,
+compared to the upstream source(s).
+
+Use additional notes to capture any other relevant information or
+considerations.
+
+(Usage Note: Duplicate and complete the following for each source type.)
+
+Compared to the Use and Utilities section above, which describe the use, this
+section generally describes what benefits come from these usages and the
+value system in which those benefits provide value.
+
+-->
+<ul>
+<li><strong>Source Type:</strong> Summarize here. Include links where available.</li>
+<li><strong>Source Type:</strong> Summarize here. Include links where available.</li>
+<li><strong>Source Type:</strong> Summarize here. Include links where available.</li>
+</ul>
+<p><strong>Additional Notes:</strong> Add here</p>
+<h4 id="limitations-and-trade-offs">Limitation(s) and Trade-Off(s)<a class="headerlink" href="#limitations-and-trade-offs" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: What are the limitations of the resulting dataset to its consumers,
+compared to the upstream source(s)?
+
+Break down by source type.<br><br>(Usage Note: Duplicate and complete the
+following for each source type.) -->
+<ul>
+<li><strong>Source Type:</strong> Summarize here. Include links where available.</li>
+<li><strong>Source Type:</strong> Summarize here. Include links where available.</li>
+<li><strong>Source Type:</strong> Summarize here. Include links where available.</li>
+</ul>
+<h2 id="sensitive-and-protected-attributes">Sensitive and Protected Attributes<a class="headerlink" href="#sensitive-and-protected-attributes" title="Permanent link">&para;</a></h2>
+<h3 id="sensitivity-of-data">Sensitivity of Data<a class="headerlink" href="#sensitivity-of-data" title="Permanent link">&para;</a></h3>
+<!-- info: Be mindful not to repeat any information that might be in a technical
+risk assessment or data processing request somewhere else.  Use references where necessary,
+or write TDB where no answers are currently known?
+
+This section is under development with ProdSec, PrivGov, and
+Algorithmic Privacy and Fairness (for ethical assessment). -->
+
+<h4 id="sensitivity-types">Sensitivity Type(s)<a class="headerlink" href="#sensitivity-types" title="Permanent link">&para;</a></h4>
+<!-- scope: telescope -->
+<!-- info: Select ***all applicable*** data types present in the dataset: -->
+<ul>
+<li>User Content</li>
+<li>User Metadata</li>
+<li>User Activity Data</li>
+<li>Identifiable Data</li>
+<li>S/PII</li>
+<li>Business Data</li>
+<li>Employee Data</li>
+<li>Pseudonymous Data</li>
+<li>Anonymous Data</li>
+<li>Health Data</li>
+<li>Children’s Data</li>
+<li>None</li>
+<li>Others (Please specify)</li>
+</ul>
+<h4 id="fields-with-sensitive-data">Field(s) with Sensitive Data<a class="headerlink" href="#fields-with-sensitive-data" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: List fields in the dataset that contain S/PII, and specify if their
+collection was intentional or unintentional.
+
+Use additional notes to capture any other relevant information or
+considerations. -->
+<p><strong>Intentional Collected Sensitive Data</strong></p>
+<p>(S/PII were collected as a part of the
+dataset creation process.)</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Field Name</td>
+<td>Type of S/PII</td>
+</tr>
+<tr>
+<td>Field Name</td>
+<td>Type of S/PII</td>
+</tr>
+<tr>
+<td>Field Name</td>
+<td>Type of S/PII</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Unintentionally Collected Sensitive Data</strong></p>
+<p>(S/PII were not explicitly collected as a
+part of the dataset creation process but
+can be inferred using additional
+methods.)</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Field Name</td>
+<td>Type of S/PII</td>
+</tr>
+<tr>
+<td>Field Name</td>
+<td>Type of S/PII</td>
+</tr>
+<tr>
+<td>Field Name</td>
+<td>Type of S/PII</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Additional Notes:</strong> Add here</p>
+<h4 id="security-and-privacy-handling">Security and Privacy Handling<a class="headerlink" href="#security-and-privacy-handling" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: Summarize the measures or steps to handle sensitive data in this
+dataset and list relevant DPRs
+
+Use additional notes to capture any other relevant information or
+considerations. -->
+
+<p>Summarize here. Include relevant DPRs links and security and/or privacy metrics where applicable.</p>
+<p><strong>DPR:</strong> description</p>
+<p><strong>DPR:</strong> description</p>
+<p><strong>Privacy Metric:</strong> NA</p>
+<p><strong>Additional Notes:</strong> Add here</p>
+<h4 id="risk-types">Risk Type(s)<a class="headerlink" href="#risk-types" title="Permanent link">&para;</a></h4>
+<!-- scope: telescope -->
+<!-- info: Select **all applicable** risk types presenting from the
+dataset: -->
+<ul>
+<li>Direct Risk</li>
+<li>Indirect Risk</li>
+<li>Residual Risk</li>
+<li>No Known Risks</li>
+<li>Others (Please Specify)</li>
+</ul>
+<h3 id="protected-attributes">Protected Attributes<a class="headerlink" href="#protected-attributes" title="Permanent link">&para;</a></h3>
+<h4 id="protected-attribute-types">Protected Attribute Type(s)<a class="headerlink" href="#protected-attribute-types" title="Permanent link">&para;</a></h4>
+<!-- scope: telescope -->
+<!-- info: Select **all attributes** that are represented (directly or
+indirectly) in the dataset. -->
+<ul>
+<li>Gender</li>
+<li>Socio-economic status</li>
+<li>Geography</li>
+<li>Language</li>
+<li>Age</li>
+<li>Culture</li>
+<li>Experience or Seniority</li>
+<li>Others (please specify)</li>
+</ul>
+<h4 id="fields-with-protected-attributes">Field(s) with Protected Attributes<a class="headerlink" href="#fields-with-protected-attributes" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: List fields in the dataset that contain protected attributes, and
+specify if their collection was intentional or unintentional.
+
+Use additional notes to capture any other relevant information or
+considerations. -->
+<p><strong>Intentionally Collected Attributes</strong></p>
+<p>Protected attributes were labeled or collected as a part of the dataset creation
+process.</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Field Name</td>
+<td>Protected Attributed Collected</td>
+</tr>
+<tr>
+<td>Field Name</td>
+<td>Protected Attributed Collected</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Additional Notes:</strong> Add here</p>
+<p><strong>Unintentionally Collected Attributes</strong></p>
+<p>Protected attributes were not explicitly collected as a part of the dataset
+creation process but can be inferred using additional methods.</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Field Name</td>
+<td>Protected Attributed Collected</td>
+</tr>
+<tr>
+<td>Field Name</td>
+<td>Protected Attributed Collected</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Additional Notes:</strong> Add here</p>
+<h4 id="rationale">Rationale<a class="headerlink" href="#rationale" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: Describe the motivation, rationale, considerations or approaches
+that caused this dataset to include the indicated protected attributes.
+
+Summarize why or how this might affect the use of the dataset. -->
+<p>Summarize here. Include links, table, and media as relevant.</p>
+<h4 id="sources">Source(s)<a class="headerlink" href="#sources" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: List the sources of the protected attributes.
+
+Use additional notes to capture any other relevant information or
+considerations. -->
+<ul>
+<li><strong>Protected Attribute:</strong> Sources</li>
+<li><strong>Protected Attribute:</strong> Sources</li>
+<li><strong>Protected Attribute:</strong> Sources</li>
+</ul>
+<p><strong>Additional Notes:</strong> Add here</p>
+<h4 id="methodology-details_1">Methodology Detail(s)<a class="headerlink" href="#methodology-details_1" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: Describe the methods used to collect sensitive/protected
+attributes in the dataset.
+
+Use additional notes to capture any other relevant information or
+considerations.
+
+(Usage Note: Duplicate and complete the following for each protected
+attribute.) -->
+
+<p><strong>Protected Attribute Collection Method:</strong> Describe the collection method here. Include links where necessary</p>
+<p><strong>Collection task:</strong> Describe the task here. Include links where necessary</p>
+<p><strong>Platforms, tools, or libraries:</strong></p>
+<ul>
+<li>[Platform, tools, or libraries]: Write description here</li>
+<li>[Platform, tools, or libraries]: Write description here</li>
+<li>[Platform, tools, or libraries]: Write description here</li>
+</ul>
+<p><strong>Additional Notes:</strong> Add here</p>
+<h4 id="known-correlations-to-protected-attributes">Known Correlations to Protected Attributes<a class="headerlink" href="#known-correlations-to-protected-attributes" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: Describe any known correlations with the indicated sensitive
+attributes in this dataset.
+
+Use additional notes to capture any other relevant information or
+considerations.
+
+(Usage Note: Duplicate for each known correlation.) -->
+<p>[<code>field_name</code>, <code>field_name</code>]</p>
+<p><strong>Description:</strong> Summarize here. Include visualizations, metrics, or links
+where necessary.</p>
+<p><strong>Impact on dataset use:</strong> Summarize here. Include visualizations, metrics, or
+links where necessary.</p>
+<p><strong>Additional Notes:</strong> add here</p>
+<h4 id="risks-and-mitigations_1">Risk(s) and Mitigation(s)<a class="headerlink" href="#risks-and-mitigations_1" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: Summarize systemic or residual risks, performance expectations,
+trade-offs and caveats because of protected attributes in this dataset.
+
+Use additional notes to capture any other relevant information or
+considerations.
+
+Usage Note: Duplicate and complete the following for each protected attribute. -->
+<p><strong>Protected Attribute</strong></p>
+<p>Summarize here. Include links and metrics where applicable.</p>
+<p><strong>Risk type:</strong> [Description + Mitigations]</p>
+<p><strong>Risk type:</strong> [Description + Mitigations]</p>
+<p><strong>Risk type:</strong> [Description + Mitigations]</p>
+<p><strong>Trade-offs, caveats, and other considerations:</strong> Summarize here. Include
+visualizations, metrics, or links where necessary.</p>
+<p><strong>Additional Notes:</strong> Add here</p>
+<h2 id="transformations">Transformations<a class="headerlink" href="#transformations" title="Permanent link">&para;</a></h2>
+<!-- info: The goal of this section is to elucidate if any biases
+may have been introduced during the transformation process(es) underwent
+to create this dataset.
+
+If any subsections below are covered by using Collibra data assets,
+simply provide a link to those corresponding data assets in the
+subsections below.
+
+If your transformation codebase or tooling already provides
+reasonably well understood information about the transformations
+applied to create this dataset, you may also simply want to
+provide relevant links in the subsections below.
+
+-->
+<h3 id="code-base-and-existing-documentation">Code Base and Existing Documentation<a class="headerlink" href="#code-base-and-existing-documentation" title="Permanent link">&para;</a></h3>
+<!-- scope: telescope -->
+<!-- info: Provide link(s) to transformation codebase and
+corresponding documentation. If the transformations are
+already well described there, do not repeat the information here.
+Simply refer the reader to go there for this information. -->
+<p>See [<a href="">this GitHub repository</a>] for more transformation code base and documentation.</p>
+<h3 id="synopsis">Synopsis<a class="headerlink" href="#synopsis" title="Permanent link">&para;</a></h3>
+<h4 id="transformations-applied">Transformation(s) Applied<a class="headerlink" href="#transformations-applied" title="Permanent link">&para;</a></h4>
+<!-- scope: telescope -->
+<!-- info: Select **all applicable** transformations
+that were applied to the dataset.
+
+Use section only if not already documented elsewhere!
+-->
+<ul>
+<li>Anomaly Detection</li>
+<li>Cleaning Mismatched Values</li>
+<li>Cleaning Missing Values</li>
+<li>Converting Data Types</li>
+<li>Data Aggregation</li>
+<li>Dimensionality Reduction</li>
+<li>Joining Input Sources</li>
+<li>Redaction or Anonymization</li>
+<li>Others (Please specify)</li>
+</ul>
+<h4 id="fields-transformed">Field(s) Transformed<a class="headerlink" href="#fields-transformed" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: Provide the fields in the dataset that
+were transformed.
+
+Use section only if not already documented elsewhere!
+
+Use additional notes to capture any
+other relevant information or
+considerations.
+
+(Usage Note: Duplicate and complete
+the following for each transformation
+type applied. Include the data types to
+which fields were transformed.) -->
+<p><strong>Transformation Type</strong></p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Source and Target</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Field Name</td>
+<td>Source Field: Target Field</td>
+</tr>
+<tr>
+<td>Field Name</td>
+<td>Source Field: Target Field</td>
+</tr>
+<tr>
+<td>&hellip;</td>
+<td>&hellip;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Additional Notes:</strong> Add here</p>
+<h3 id="breakdown-of-transformations">Breakdown of Transformations<a class="headerlink" href="#breakdown-of-transformations" title="Permanent link">&para;</a></h3>
+<!-- info: Fill out relevant rows. -->
+<h4 id="cleaning-missing-values">Cleaning Missing Value(s)<a class="headerlink" href="#cleaning-missing-values" title="Permanent link">&para;</a></h4>
+<!-- scope: telescope -->
+<!-- info: Which fields in the data were missing
+values? How many? -->
+<p>Summarize here. Include links where available.</p>
+<p><strong>Field Name:</strong> Count or description</p>
+<p><strong>Field Name:</strong> Count or description</p>
+<p><strong>Field Name:</strong> Count or description</p>
+<h4 id="methods-used_1">Method(s) Used<a class="headerlink" href="#methods-used_1" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: How were missing values cleaned?
+What other choices were considered? -->
+<p>Summarize here. Include links where necessary.</p>
+<h4 id="comparative-summary">Comparative Summary<a class="headerlink" href="#comparative-summary" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: Why were missing values cleaned using
+this method (over others)? Provide
+comparative charts showing before
+and after missing values were cleaned. -->
+<p>Summarize here. Include links, tables, visualizations where available.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Diff</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Field Name</td>
+<td>Before: After</td>
+</tr>
+<tr>
+<td>Field Name</td>
+<td>Before: After</td>
+</tr>
+<tr>
+<td>&hellip;</td>
+<td>&hellip;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Above:</strong> Provide a caption for the above table or visualization.</p>
+<p><strong>Additional Notes:</strong> Add here</p>
+<h4 id="residual-and-other-risks">Residual and Other Risk(s)<a class="headerlink" href="#residual-and-other-risks" title="Permanent link">&para;</a></h4>
+<!-- scope: telescope -->
+<!-- info: What risks were introduced because of
+this transformation? Which risks were
+mitigated? -->
+<p>Summarize here. Include links and metrics where applicable.</p>
+<ul>
+<li><strong>Risk Type:</strong> Description + Mitigations</li>
+<li><strong>Risk Type:</strong> Description + Mitigations</li>
+<li><strong>Risk Type:</strong> Description + Mitigations</li>
+</ul>
+<h4 id="human-oversight-measures">Human Oversight Measure(s)<a class="headerlink" href="#human-oversight-measures" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: What human oversight measures,
+including additional testing,
+investigations and approvals were
+taken due to this transformation? -->
+<p>Summarize here. Include links where available.</p>
+<h4 id="additional-considerations">Additional Considerations<a class="headerlink" href="#additional-considerations" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: What additional considerations were
+made? -->
+<p>Summarize here. Include links where available.</p>
+<h4 id="cleaning-mismatched-values">Cleaning Mismatched Value(s)<a class="headerlink" href="#cleaning-mismatched-values" title="Permanent link">&para;</a></h4>
+<!-- scope: telescope -->
+<!-- info: Which fields in the data were corrected
+for mismatched values? -->
+<p>Summarize here. Include links where available.</p>
+<p><strong>Field Name:</strong> Count or Description</p>
+<p><strong>Field Name:</strong> Count or Description</p>
+<p><strong>Field Name:</strong> Count or Description</p>
+<h4 id="methods-used_2">Method(s) Used<a class="headerlink" href="#methods-used_2" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: How were incorrect or mismatched
+values cleaned? What other choices
+were considered? -->
+<p>Summarize here. Include links where available.</p>
+<h4 id="comparative-summary_1">Comparative Summary<a class="headerlink" href="#comparative-summary_1" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: Why were incorrect or mismatched
+values cleaned using this method (over
+others)? Provide a comparative
+analysis demonstrating before and
+after values were cleaned. -->
+<p>Summarize here. Include links where available.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Diff</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Field Name</td>
+<td>Before: After</td>
+</tr>
+<tr>
+<td>Field Name</td>
+<td>Before: After</td>
+</tr>
+<tr>
+<td>&hellip;</td>
+<td>&hellip;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Above:</strong> Provide a caption for the above table or visualization.</p>
+<p><strong>Additional Notes:</strong> Add here</p>
+<h4 id="residual-and-other-risks_1">Residual and Other Risk(s)<a class="headerlink" href="#residual-and-other-risks_1" title="Permanent link">&para;</a></h4>
+<!-- scope: telescope -->
+<!-- info: What risks were introduced because of
+this transformation? Which risks were
+mitigated? -->
+<p>Summarize here. Include links and metrics where applicable.</p>
+<p><strong>Risk Type:</strong> Description + Mitigations</p>
+<p><strong>Risk Type:</strong> Description + Mitigations</p>
+<p><strong>Risk Type:</strong> Description + Mitigations</p>
+<h4 id="human-oversight-measures_1">Human Oversight Measure(s)<a class="headerlink" href="#human-oversight-measures_1" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: What human oversight measures,
+including additional testing,
+investigations and approvals were
+taken due to this transformation? -->
+<p>Summarize here. Include links where available.</p>
+<h4 id="additional-considerations_1">Additional Considerations<a class="headerlink" href="#additional-considerations_1" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: What additional considerations were made? -->
+<p>Summarize here. Include links where available.</p>
+<h4 id="anomalies">Anomalies<a class="headerlink" href="#anomalies" title="Permanent link">&para;</a></h4>
+<!-- scope: telescope -->
+<!-- info: How many anomalies or outliers were
+detected?
+If at all, how were detected anomalies
+or outliers handled?
+Why or why not? -->
+<p>Summarize here. Include links where available.</p>
+<p><strong>Field Name:</strong> Count or Description</p>
+<p><strong>Field Name:</strong> Count or Description</p>
+<p><strong>Field Name:</strong> Count or Description</p>
+<h4 id="methods-used_3">Method(s) Used<a class="headerlink" href="#methods-used_3" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: What methods were used to detect
+anomalies or outliers? -->
+<p>Summarize here. Include links where necessary.</p>
+<p><strong>Platforms, tools, or libraries</strong></p>
+<ul>
+<li>Platform, tool, or library: Write description here</li>
+<li>Platform, tool, or library: Write description here</li>
+<li>Platform, tool, or library: Write description here</li>
+</ul>
+<h4 id="comparative-summary_2">Comparative Summary<a class="headerlink" href="#comparative-summary_2" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: Provide a comparative analysis
+demonstrating before and after
+anomaly handling measures. -->
+<p>Summarize here. Include links, tables, visualizations where available.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Diff</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Field Name</td>
+<td>Before: After</td>
+</tr>
+<tr>
+<td>Field Name</td>
+<td>Before: After</td>
+</tr>
+<tr>
+<td>&hellip;</td>
+<td>&hellip;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Above:</strong> Provide a caption for the above table or visualization.</p>
+<p><strong>Additional Notes:</strong> Add here</p>
+<h4 id="residual-and-other-risks_2">Residual and Other Risk(s)<a class="headerlink" href="#residual-and-other-risks_2" title="Permanent link">&para;</a></h4>
+<!-- scope: telescope -->
+<!-- info: What risks were introduced because of
+this transformation? Which risks were
+mitigated? -->
+<p>Summarize here. Include links and metrics where applicable.</p>
+<p><strong>Risk Type:</strong> Description + Mitigations</p>
+<p><strong>Risk Type:</strong> Description + Mitigations</p>
+<p><strong>Risk Type:</strong> Description + Mitigations</p>
+<h4 id="human-oversight-measures_2">Human Oversight Measure(s)<a class="headerlink" href="#human-oversight-measures_2" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: What human oversight measures,
+including additional testing,
+investigations and approvals were
+taken due to this transformation? -->
+<p>Summarize here. Include links where available.</p>
+<h4 id="additional-considerations_2">Additional Considerations<a class="headerlink" href="#additional-considerations_2" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: What additional considerations were made? -->
+<p>Summarize here. Include links where available.</p>
+<h4 id="dimensionality-reduction">Dimensionality Reduction<a class="headerlink" href="#dimensionality-reduction" title="Permanent link">&para;</a></h4>
+<!-- scope: telescope -->
+<!-- info: How many original features were
+collected and how many dimensions
+were reduced? -->
+<p>Summarize here. Include links where available.</p>
+<p><strong>Field Name:</strong> Count or Description</p>
+<p><strong>Field Name:</strong> Count or Description</p>
+<p><strong>Field Name:</strong> Count or Description</p>
+<h4 id="methods-used_4">Method(s) Used<a class="headerlink" href="#methods-used_4" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: What methods were used to reduce the
+dimensionality of the data? What other
+choices were considered? -->
+<p>Summarize here. Include links where
+necessary.</p>
+<p><strong>Platforms, tools, or libraries</strong></p>
+<ul>
+<li>Platform, tool, or library: Write description here</li>
+<li>Platform, tool, or library: Write description here</li>
+<li>Platform, tool, or library: Write description here</li>
+</ul>
+<h4 id="comparative-summary_3">Comparative Summary<a class="headerlink" href="#comparative-summary_3" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: Why were features reduced using this
+method (over others)? Provide
+comparative charts showing before
+and after dimensionality reduction
+processes. -->
+<p>Summarize here. Include links, tables, visualizations where available.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Diff</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Field Name</td>
+<td>Before: After</td>
+</tr>
+<tr>
+<td>Field Name</td>
+<td>Before: After</td>
+</tr>
+<tr>
+<td>&hellip;</td>
+<td>&hellip;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Above:</strong> Provide a caption for the above table or visualization.</p>
+<p><strong>Additional Notes:</strong> Add here</p>
+<h4 id="residual-and-other-risks_3">Residual and Other Risks<a class="headerlink" href="#residual-and-other-risks_3" title="Permanent link">&para;</a></h4>
+<!-- scope: telescope -->
+<!-- info: What risks were introduced because of
+this transformation? Which risks were
+mitigated? -->
+<p>Summarize here. Include links and metrics where applicable.</p>
+<p><strong>Risk Type:</strong> Description + Mitigations</p>
+<p><strong>Risk Type:</strong> Description + Mitigations</p>
+<p><strong>Risk Type:</strong> Description + Mitigations</p>
+<h4 id="human-oversight-measures_3">Human Oversight Measure(s)<a class="headerlink" href="#human-oversight-measures_3" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: What human oversight measures,
+including additional testing,
+investigations and approvals were
+taken due to this transformation? -->
+<p>Summarize here. Include links where available.</p>
+<h4 id="additional-considerations_3">Additional Considerations<a class="headerlink" href="#additional-considerations_3" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: What additional considerations were made? -->
+<p>Summarize here. Include links where available.</p>
+<h4 id="joining-input-sources">Joining Input Sources<a class="headerlink" href="#joining-input-sources" title="Permanent link">&para;</a></h4>
+<!-- scope: telescope -->
+<!-- info: What were the distinct input sources that were joined? -->
+<p>Summarize here. Include links where available.</p>
+<p><strong>Field Name:</strong> Count or Description</p>
+<p><strong>Field Name:</strong> Count or Description</p>
+<p><strong>Field Name:</strong> Count or Description</p>
+<h4 id="methods-used_5">Method(s) Used<a class="headerlink" href="#methods-used_5" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: What are the shared columns of fields used to join these
+sources? -->
+<p>Summarize here. Include links where necessary.</p>
+<p><strong>Platforms, tools, or libraries</strong></p>
+<ul>
+<li>Platform, tool, or library: Write description here</li>
+<li>Platform, tool, or library: Write description here</li>
+<li>Platform, tool, or library: Write description here</li>
+</ul>
+<h4 id="comparative-summary_4">Comparative Summary<a class="headerlink" href="#comparative-summary_4" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: Why were features joined using this
+method over others?
+
+Provide comparative charts showing
+before and after dimensionality
+reduction processes. -->
+<p>Summarize here. Include links, tables, visualizations where available.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Diff</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Field Name</td>
+<td>Before: After</td>
+</tr>
+<tr>
+<td>Field Name</td>
+<td>Before: After</td>
+</tr>
+<tr>
+<td>&hellip;</td>
+<td>&hellip;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Above:</strong> Provide a caption for the above table or visualization.</p>
+<p><strong>Additional Notes:</strong> Add here</p>
+<h4 id="residual-and-other-risks_4">Residual and Other Risk(s)<a class="headerlink" href="#residual-and-other-risks_4" title="Permanent link">&para;</a></h4>
+<!-- scope: telescope -->
+<!-- info: What risks were introduced because of
+this transformation? Which risks were
+mitigated? -->
+<p>Summarize here. Include links and metrics where applicable.</p>
+<p><strong>Risk Type:</strong> Description + Mitigations</p>
+<p><strong>Risk Type:</strong> Description + Mitigations</p>
+<p><strong>Risk Type:</strong> Description + Mitigations</p>
+<h4 id="human-oversight-measures_4">Human Oversight Measure(s)<a class="headerlink" href="#human-oversight-measures_4" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: What human oversight measures,
+including additional testing,
+investigations and approvals were
+taken due to this transformation? -->
+<p>Summarize here. Include links where
+available.</p>
+<h4 id="additional-considerations_4">Additional Considerations<a class="headerlink" href="#additional-considerations_4" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: What additional considerations were
+made? -->
+<p>Summarize here. Include links where
+available.</p>
+<h4 id="redaction-or-anonymization">Redaction or Anonymization<a class="headerlink" href="#redaction-or-anonymization" title="Permanent link">&para;</a></h4>
+<!-- scope: telescope -->
+<!-- info: Which features were redacted or
+anonymized? -->
+<p>Summarize here. Include links where available.</p>
+<p><strong>Field Name:</strong> Count or Description</p>
+<p><strong>Field Name:</strong> Count or Description</p>
+<p><strong>Field Name:</strong> Count or Description</p>
+<h4 id="methods-used_6">Method(s) Used<a class="headerlink" href="#methods-used_6" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: What methods were used to redact or
+anonymize data? -->
+<p>Summarize here. Include links where necessary.</p>
+<p><strong>Platforms, tools, or libraries</strong></p>
+<ul>
+<li>Platform, tool, or library: Write description here</li>
+<li>Platform, tool, or library: Write description here</li>
+<li>Platform, tool, or library: Write description here</li>
+</ul>
+<h4 id="comparative-summary_5">Comparative Summary<a class="headerlink" href="#comparative-summary_5" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: Why was data redacted or anonymized
+using this method over others? Provide
+comparative charts showing before
+and after redaction or anonymization
+process. -->
+<p>Summarize here. Include links, tables, visualizations where available.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Diff</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Field Name</td>
+<td>Before: After</td>
+</tr>
+<tr>
+<td>Field Name</td>
+<td>Before: After</td>
+</tr>
+<tr>
+<td>&hellip;</td>
+<td>&hellip;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Above:</strong> Provide a caption for the above table or visualization.</p>
+<p><strong>Additional Notes:</strong> Add here</p>
+<h4 id="residual-and-other-risks_5">Residual and Other Risk(s)<a class="headerlink" href="#residual-and-other-risks_5" title="Permanent link">&para;</a></h4>
+<!-- scope: telescope -->
+<!-- info: What risks were introduced because of
+this transformation? Which risks were
+mitigated? -->
+<p>Summarize here. Include links and metrics where applicable.</p>
+<p><strong>Risk Type:</strong> Description + Mitigations</p>
+<p><strong>Risk Type:</strong> Description + Mitigations</p>
+<p><strong>Risk Type:</strong> Description + Mitigations</p>
+<h4 id="human-oversight-measures_5">Human Oversight Measure(s)<a class="headerlink" href="#human-oversight-measures_5" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: What human oversight measures,
+including additional testing,
+investigations and approvals were
+taken due to this transformation? -->
+<p>Summarize here. Include links where available.</p>
+<h4 id="additional-considerations_5">Additional Considerations<a class="headerlink" href="#additional-considerations_5" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: What additional considerations were
+made? -->
+<p>Summarize here. Include links where available.</p>
+<h4 id="others-please-specify">Others (Please Specify)<a class="headerlink" href="#others-please-specify" title="Permanent link">&para;</a></h4>
+<!-- scope: telescope -->
+<!-- info: What was done? Which features or
+fields were affected? -->
+<p>Summarize here. Include links where available.</p>
+<p><strong>Field Name:</strong> Count or Description</p>
+<p><strong>Field Name:</strong> Count or Description</p>
+<p><strong>Field Name:</strong> Count or Description</p>
+<h4 id="methods-used_7">Method(s) Used<a class="headerlink" href="#methods-used_7" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: What method were used? -->
+<p>Summarize here. Include links where necessary.</p>
+<p><strong>Platforms, tools, or libraries</strong></p>
+<ul>
+<li>Platform, tool, or library: Write description here</li>
+<li>Platform, tool, or library: Write description here</li>
+<li>Platform, tool, or library: Write description here</li>
+</ul>
+<h4 id="comparative-summary_6">Comparative Summary<a class="headerlink" href="#comparative-summary_6" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: Why was this method used over
+others? Provide comparative charts
+showing before and after this
+transformation. -->
+<p>Summarize here. Include links, tables, visualizations where available.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Field Name</strong></th>
+<th><strong>Diff</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Field Name</td>
+<td>Before: After</td>
+</tr>
+<tr>
+<td>Field Name</td>
+<td>Before: After</td>
+</tr>
+<tr>
+<td>&hellip;</td>
+<td>&hellip;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Above:</strong> Provide a caption for the above table or visualization.</p>
+<p><strong>Additional Notes:</strong> Add here</p>
+<h4 id="residual-and-other-risks_6">Residual and Other Risk(s)<a class="headerlink" href="#residual-and-other-risks_6" title="Permanent link">&para;</a></h4>
+<!-- scope: telescope -->
+<!-- info: What risks were introduced because of
+this transformation? Which risks were
+mitigated? -->
+<p>Summarize here. Include links and metrics where applicable.</p>
+<p><strong>Risk type:</strong> [Description + Mitigations]</p>
+<p><strong>Risk type:</strong> [Description + Mitigations]</p>
+<p><strong>Risk type:</strong> [Description + Mitigations]</p>
+<h4 id="human-oversight-measures_6">Human Oversight Measure(s)<a class="headerlink" href="#human-oversight-measures_6" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: What human oversight measures,
+including additional testing,
+investigations and approvals were
+taken due to this transformation? -->
+<p>Summarize here. Include links where available.</p>
+<h4 id="additional-considerations_6">Additional Considerations<a class="headerlink" href="#additional-considerations_6" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: What additional considerations were made? -->
+<p>Summarize here. Include links where available.</p>
+<h2 id="annotations-and-labeling">Annotations and Labeling<a class="headerlink" href="#annotations-and-labeling" title="Permanent link">&para;</a></h2>
+<!-- info: Fill this section if any human or algorithmic annotation tasks were
+performed in the creation of your dataset. -->
+
+<h3 id="annotation">Annotation<a class="headerlink" href="#annotation" title="Permanent link">&para;</a></h3>
+<h4 id="tasks">Task(s)<a class="headerlink" href="#tasks" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: Summarize each task type associated
+with annotations in the dataset.
+
+Use additional notes to capture any
+other relevant information or
+considerations.
+
+(Usage Note: Duplicate and complete
+the following for each task type.) -->
+<p><strong>(Task Type)</strong></p>
+<p><strong>Task description:</strong> Summarize here. Include links if available.</p>
+<p><strong>Task instructions:</strong> Summarize here. Include links if available.</p>
+<p><strong>Methods used:</strong> Summarize here. Include links if available.</p>
+<p><strong>Inter-rater adjudication policy:</strong> Summarize here. Include links if
+available.</p>
+<!-- Gold questions (i.e., questions with unambiguous, known answers)
+are questions that workers are only likely to get wrong if they
+don’t clearly understand the annotation criteria. -->
+<p><strong>Golden questions:</strong> Summarize here. Include links if available.</p>
+<p><strong>Additional notes:</strong> Add here</p>
+<h4 id="characteristics">Characteristic(s)<a class="headerlink" href="#characteristics" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: Describe relevant characteristics of annotations
+as indicated. For quality metrics, consider
+including accuracy, consensus accuracy, IRR
+(inter-rater reliability, sometimes called
+inter-annotator agreement or IAA, and its
+variants such as Cohen Kappa Score),
+xRR (cross replication reliability,
+sometimes called intra-rater reliability)
+at the appropriate granularity (e.g. across
+dataset, by annotator, by annotation, etc.).
+
+Use additional notes to capture any other
+relevant information or considerations.
+
+(Usage Note: Duplicate and complete the
+following for each annotation type.) -->
+<table>
+<thead>
+<tr>
+<th><strong>(Annotation Type)</strong></th>
+<th><strong>Number</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Number of annotated examples</td>
+<td>123456789</td>
+</tr>
+<tr>
+<td>Total number of annotations</td>
+<td>123456789</td>
+</tr>
+<tr>
+<td>Average annotations per example</td>
+<td>123456789</td>
+</tr>
+<tr>
+<td>Number of annotators per example</td>
+<td>123456789</td>
+</tr>
+<tr>
+<td>[Quality metric per granuality]</td>
+<td>123456789</td>
+</tr>
+<tr>
+<td>[Quality metric per granuality]</td>
+<td>123456789</td>
+</tr>
+<tr>
+<td>[Quality metric per granuality]</td>
+<td>123456789</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Above:</strong> Provide a caption for the above table or visualization.</p>
+<p><strong>Additional Notes:</strong> Add here</p>
+<h4 id="descriptions">Description(s)<a class="headerlink" href="#descriptions" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: Provide descriptions of the annotations
+applied to the dataset. Include links
+and indicate platforms, tools or libraries
+used wherever possible.
+
+Use additional notes to capture any
+other relevant information or
+considerations.
+
+(Usage Note: Duplicate and complete
+the following for each annotation
+type.) -->
+<p><strong>(Annotation Type)</strong></p>
+<p><strong>Description:</strong> Description of annotations (labels, ratings) produced.
+Include how this was created or authored.</p>
+<p><strong>Link:</strong> Relevant URL link.</p>
+<p><strong>Platforms, tools, or libraries:</strong></p>
+<ul>
+<li>Platform, tool, or library: Write description here</li>
+<li>Platform, tool, or library: Write description here</li>
+<li>Platform, tool, or library: Write description here</li>
+</ul>
+<p><strong>Additional Notes:</strong> Add here</p>
+<h4 id="distributions_1">Distribution(s)<a class="headerlink" href="#distributions_1" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: Provide a distribution of annotations for each
+annotation or class of annotations using the
+format below.
+
+Use additional notes to capture any other
+relevant information or considerations.
+
+(Usage Note: Duplicate and complete the
+following for each annotation type.) -->
+<table>
+<thead>
+<tr>
+<th><strong>(Annotation Type)</strong></th>
+<th><strong>Number</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Annotations (or Class)</td>
+<td>12345 (20%)</td>
+</tr>
+<tr>
+<td>Annotations (or Class)</td>
+<td>12345 (20%)</td>
+</tr>
+<tr>
+<td>Annotations (or Class)</td>
+<td>12345 (20%)</td>
+</tr>
+<tr>
+<td>Annotations (or Class)</td>
+<td>12345 (20%)</td>
+</tr>
+<tr>
+<td>Annotations (or Class)</td>
+<td>12345 (20%)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Above:</strong> Provide a caption for the above table or visualization.</p>
+<p><strong>Additional Notes:</strong> Add here</p>
+<h3 id="human-annotators">Human Annotators<a class="headerlink" href="#human-annotators" title="Permanent link">&para;</a></h3>
+<!-- info: Fill this section if human annotators were used. -->
+<h4 id="annotation-workforce-type">Annotation Workforce Type<a class="headerlink" href="#annotation-workforce-type" title="Permanent link">&para;</a></h4>
+<!-- scope: telescope -->
+<!-- info: Select **all applicable** annotation
+workforce types or methods used
+to annotate the dataset: -->
+<ul>
+<li>Annotation Target in Data</li>
+<li>Machine-Generated</li>
+<li>Annotations</li>
+<li>Protected Attribute Annotations (Expert)</li>
+<li>Protected Attribute Annotations (Non-Expert)</li>
+<li>Protected Attribute Annotations (Employees)</li>
+<li>Protected Attribute Annotations (Contractors)</li>
+<li>Protected Attribute Annotations (Crowdsourcing)</li>
+<li>Protected Attribute Annotations (Outsourced / Managed)</li>
+<li>Teams</li>
+<li>Unlabeled</li>
+<li>Others (Please specify)</li>
+</ul>
+<h4 id="annotator-pools">Annotator Pool(s)<a class="headerlink" href="#annotator-pools" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: Provide a brief description for each annotator
+pool performing the human annotation task.
+
+Use additional notes to capture any other
+relevant information or considerations.
+
+(Usage Note: Duplicate and complete the
+following for each annotation type.) -->
+<p><strong>(Annotation Pool Name)</strong></p>
+<p><strong>Number of unique annotators:</strong> Summarize here. Include links if available.</p>
+<p><strong>Task(s) completed:</strong> Summarize here (See <a href="#tasks">annotation tasks</a> section for full list of Annotation tasks).</p>
+<p><strong>Expertise of annotators:</strong> Summarize here. Include links if available.</p>
+<p><strong>Description of annotators:</strong> Summarize here. Include links if available.</p>
+<p><strong>Summary of general (non task specific) annotation instructions:</strong> Summarize here. Include links if
+available.</p>
+<p><strong>Summary of annotator&rsquo;s responses to gold questions:</strong> Summarize here. Include links if available.</p>
+<p><strong>Annotation platforms:</strong> Summarize here. Include links if available.</p>
+<p><strong>Additional Notes:</strong> Add here</p>
+<h4 id="languages">Language(s)<a class="headerlink" href="#languages" title="Permanent link">&para;</a></h4>
+<!-- scope: telescope -->
+<!-- info: General information about annotation workforce
+
+Use additional notes to capture any
+other relevant information or
+considerations.
+
+(Usage Note: Duplicate and
+complete the following for each
+annotation type.) -->
+<p><strong>(Annotator Languages Spoken)</strong></p>
+<ul>
+<li>Language [Percentage %]</li>
+<li>Language [Percentage %]</li>
+<li>Language [Percentage %]</li>
+</ul>
+<p><strong>Above:</strong> Provide a caption for the above table or visualization.</p>
+<p><strong>Additional Notes:</strong> Add here</p>
+<h4 id="locations">Location(s)<a class="headerlink" href="#locations" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: General information about annotation workforce
+
+Use additional notes to capture any other
+relevant information or considerations.
+
+(Usage Note: Duplicate and complete the
+following for each annotation type.) -->
+<p><strong>(Annotator Locations of Upbringing)</strong></p>
+<ul>
+<li>Location [Percentage %]</li>
+<li>Location [Percentage %]</li>
+<li>Location [Percentage %]</li>
+</ul>
+<p><strong>Above:</strong> Provide a caption for the above table or visualization.</p>
+<p><strong>Additional Notes:</strong> Add here</p>
+<p><strong>(Annotator Current Locations of Residence)</strong></p>
+<ul>
+<li>Location [Percentage %]</li>
+<li>Location [Percentage %]</li>
+<li>Location [Percentage %]</li>
+</ul>
+<p><strong>Above:</strong> Provide a caption for the above table or visualization.</p>
+<p><strong>Additional Notes:</strong> Add here</p>
+<h4 id="genders">Gender(s)<a class="headerlink" href="#genders" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: General information about annotation workforce
+
+Use additional notes to capture any
+other relevant information or
+considerations.
+
+(Usage Note: Duplicate and complete
+the following for each annotation
+type.) -->
+<p><strong>(Annotator Genders)</strong></p>
+<ul>
+<li>Gender [Percentage %]</li>
+<li>Gender [Percentage %]</li>
+<li>Gender [Percentage %]</li>
+</ul>
+<p><strong>Above:</strong> Provide a caption for the above table or visualization.</p>
+<p><strong>Additional Notes:</strong> Add here</p>
+<h2 id="validation-types">Validation Types<a class="headerlink" href="#validation-types" title="Permanent link">&para;</a></h2>
+<!-- info: Fill this section if the data in the dataset was validated during
+or after the creation of your dataset. -->
+<h4 id="methods">Method(s)<a class="headerlink" href="#methods" title="Permanent link">&para;</a></h4>
+<!-- scope: telescope -->
+<!-- info: Select **all applicable**: -->
+<ul>
+<li>Data Type Validation</li>
+<li>Range and Constraint Validation</li>
+<li>Code/cross-reference Validation</li>
+<li>Structured Validation</li>
+<li>Consistency Validation</li>
+<li>Not Validated</li>
+<li>Others (Please Specify)</li>
+</ul>
+<h4 id="breakdowns">Breakdown(s)<a class="headerlink" href="#breakdowns" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: Provide a description of the fields and data
+points that were validated.
+
+Use additional notes to capture any other
+relevant information or considerations.
+
+(Usage Note: Duplicate and complete the
+following for each validator type.) -->
+<p><strong>(Validation Type)</strong></p>
+<p><strong>Number of Data Points Validated:</strong> 12345</p>
+<p><strong>Fields Validated</strong>
+Field | Count (if available)
+&mdash; | &mdash;
+Field | 123456
+Field | 123456
+Field | 123456</p>
+<p><strong>Above:</strong> Provide a caption for the above table or visualization.</p>
+<h4 id="descriptions_1">Description(s)<a class="headerlink" href="#descriptions_1" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: Provide a description of the methods used to
+validate the dataset.
+
+Use additional notes to capture any other
+relevant information or considerations.
+
+(Usage Note: Duplicate and complete the
+following for each validator type.) -->
+<p><strong>(Validation Type)</strong></p>
+<p><strong>Method:</strong> Describe the validation method here. Include links where
+necessary.</p>
+<p><strong>Platforms, tools, or libraries:</strong></p>
+<ul>
+<li>Platform, tool, or library: Write description here</li>
+<li>Platform, tool, or library: Write description here</li>
+<li>Platform, tool, or library: Write description here</li>
+</ul>
+<p><strong>Validation Results:</strong> Provide results, outcomes, and actions taken because
+of the validation. Include visualizations where available.</p>
+<p><strong>Additional Notes:</strong> Add here</p>
+<h3 id="description-of-human-validators">Description of Human Validators<a class="headerlink" href="#description-of-human-validators" title="Permanent link">&para;</a></h3>
+<!-- info: Fill this section if the dataset was validated using human
+validators.  Human validation is a form of annotation (for example,
+annotating if a image satisfies a particular set of requirements).
+Thus, this section is quite similar to the Description of Human Annotators
+section. -->
+<h4 id="characteristics_1">Characteristic(s)<a class="headerlink" href="#characteristics_1" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: Provide characteristics of the validator
+pool(s). Use additional notes to capture any
+other relevant information or considerations. -->
+<p><strong>(Validation Type)</strong>
+- Unique validators: 12345
+- Number of examples per validator: 123456
+- Average cost/task/validator: $$$
+- Training provided: Y/N
+- Expertise required: Y/N</p>
+<h4 id="descriptions_2">Description(s)<a class="headerlink" href="#descriptions_2" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: Provide a brief description of the validator
+pool(s). Use additional notes to capture any
+other relevant information or considerations.
+
+(Usage Note: Duplicate and complete the
+following for each validator type.) -->
+<p><strong>(Validation Type)</strong></p>
+<p><strong>Validator description:</strong> Summarize here. Include links if available.</p>
+<p><strong>Training provided:</strong> Summarize here. Include links if available.</p>
+<p><strong>Validator selection criteria:</strong> Summarize here. Include links if available.</p>
+<p><strong>Training provided:</strong> Summarize here. Include links if available.</p>
+<p><strong>Additional Notes:</strong> Add here</p>
+<h4 id="languages_1">Language(s)<a class="headerlink" href="#languages_1" title="Permanent link">&para;</a></h4>
+<!-- scope: telescope -->
+<!-- info: Provide validator distributions.
+Use additional notes to capture any other relevant information or
+considerations.
+
+(Usage Note: Duplicate and complete the following for each annotation type.)-->
+<p><strong>(Validation Type)</strong></p>
+<ul>
+<li>Language [Percentage %]</li>
+<li>Language [Percentage %]</li>
+<li>Language [Percentage %]</li>
+</ul>
+<p><strong>Above:</strong> Provide a caption for the above table or visualization.</p>
+<p><strong>Additional Notes:</strong> Add here</p>
+<h4 id="locations_1">Location(s)<a class="headerlink" href="#locations_1" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: Provide validator distributions.
+Use additional notes to capture any other relevant information or
+considerations.
+
+(Usage Note: Duplicate and complete the following for each annotation type.)-->
+<p><strong>(Validation Type)</strong></p>
+<ul>
+<li>Location [Percentage %]</li>
+<li>Location [Percentage %]</li>
+<li>Location [Percentage %]</li>
+</ul>
+<p><strong>Above:</strong> Provide a caption for the above table or visualization.</p>
+<p><strong>Additional Notes:</strong> Add here</p>
+<h4 id="genders_1">Gender(s)<a class="headerlink" href="#genders_1" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: Provide validator distributions.
+Use additional notes to capture any other relevant information or
+considerations.
+
+(Usage Note: Duplicate and complete the following for each annotation type.)-->
+<p><strong>(Validation Type)</strong></p>
+<ul>
+<li>Gender [Percentage %]</li>
+<li>Gender [Percentage %]</li>
+<li>Gender [Percentage %]</li>
+</ul>
+<p><strong>Above:</strong> Provide a caption for the above table or visualization.</p>
+<p><strong>Additional Notes:</strong> Add here</p>
+<h2 id="sampling-methods">Sampling Methods<a class="headerlink" href="#sampling-methods" title="Permanent link">&para;</a></h2>
+<!-- info: The goal of this section is to help consumers identify potential
+biases introduced by sampling to create this dataset.
+
+Fill out the following block if your dataset employs any sampling
+methods. -->
+<h4 id="methods-used_8">Method(s) Used<a class="headerlink" href="#methods-used_8" title="Permanent link">&para;</a></h4>
+<!-- scope: telescope -->
+<!-- info: Select **all applicable** methods used in the creation of this
+dataset: -->
+<ul>
+<li>Cluster Sampling</li>
+<li>Haphazard Sampling</li>
+<li>Multi-stage Sampling</li>
+<li>Random Sampling</li>
+<li>Retrospective Sampling</li>
+<li>Stratified Sampling</li>
+<li>Systematic Sampling</li>
+<li>Weighted Sampling</li>
+<li>Unknown</li>
+<li>Unsampled</li>
+<li>Others (Please specify)</li>
+</ul>
+<h4 id="characteristics_2">Characteristic(s)<a class="headerlink" href="#characteristics_2" title="Permanent link">&para;</a></h4>
+<!-- scope: periscope -->
+<!-- info: Provide characteristics of each sampling
+method used.
+
+Use additional notes to capture any other
+relevant information or considerations.
+
+(Usage Note: Duplicate and complete the
+following for each sampling method
+used.) -->
+<table>
+<thead>
+<tr>
+<th><strong>(Sampling Type)</strong></th>
+<th><strong>Number</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Upstream Source</td>
+<td>Write here</td>
+</tr>
+<tr>
+<td>Total data sampled</td>
+<td>123m</td>
+</tr>
+<tr>
+<td>Sample size</td>
+<td>123</td>
+</tr>
+<tr>
+<td>Threshold applied</td>
+<td>123k units at property</td>
+</tr>
+<tr>
+<td>Sampling rate</td>
+<td>123</td>
+</tr>
+<tr>
+<td>Sample mean</td>
+<td>123</td>
+</tr>
+<tr>
+<td>Sample std. dev</td>
+<td>123</td>
+</tr>
+<tr>
+<td>Sampling distribution</td>
+<td>123</td>
+</tr>
+<tr>
+<td>Sampling variation</td>
+<td>123</td>
+</tr>
+<tr>
+<td>Sample statistic</td>
+<td>123</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Above:</strong> Provide a caption for the above table or visualization.</p>
+<p><strong>Additional Notes:</strong> Add here</p>
+<h4 id="sampling-criteria">Sampling Criteria<a class="headerlink" href="#sampling-criteria" title="Permanent link">&para;</a></h4>
+<!-- scope: microscope -->
+<!-- info: Describe the criteria used to sample data from
+upstream sources.
+
+Use additional notes to capture any other
+relevant information or considerations. -->
+<ul>
+<li><strong>Sampling method:</strong> Summarize here. Include links where applicable.</li>
+<li><strong>Sampling method:</strong> Summarize here. Include links where applicable.</li>
+<li><strong>Sampling method:</strong> Summarize here. Include links where applicable.</li>
+</ul>
+<h2 id="glossary">Glossary<a class="headerlink" href="#glossary" title="Permanent link">&para;</a></h2>
+<h3 id="concepts-and-definitions-referenced-in-this-data-card">Concepts and Definitions referenced in this Data Card<a class="headerlink" href="#concepts-and-definitions-referenced-in-this-data-card" title="Permanent link">&para;</a></h3>
+<!-- info: Use this space to include the expansions and definitions of any
+acronyms, concepts, or terms of art used across the Data Card.
+Use standard definitions where possible. Include the source of the definition
+where indicated. If you are using an interpretation,
+adaptation, or modification of the standard definition for the purposes of your
+Data Card or dataset, include your interpretation as well.
+
+If this information already exists as part of another document or
+in a Collibra data asset, a link to that will suffice.
+-->
+<h4 id="term-of-art">Term of Art<a class="headerlink" href="#term-of-art" title="Permanent link">&para;</a></h4>
+<p>Definition: Write here</p>
+<p>Source: Write here and share link</p>
+<p>Interpretation: Write here</p>
+<h4 id="term-of-art_1">Term of Art<a class="headerlink" href="#term-of-art_1" title="Permanent link">&para;</a></h4>
+<p>Definition: Write here</p>
+<p>Source: Write here and share link</p>
+<p>Interpretation: Write here</p>
+<h4 id="term-of-art_2">Term of Art<a class="headerlink" href="#term-of-art_2" title="Permanent link">&para;</a></h4>
+<p>Definition: Write here</p>
+<p>Source: Write here and share link</p>
+<p>Interpretation: Write here</p>
+<h4 id="term-of-art_3">Term of Art<a class="headerlink" href="#term-of-art_3" title="Permanent link">&para;</a></h4>
+<p>Definition: Write here</p>
+<p>Source: Write here and share link</p>
+<p>Interpretation: Write here</p>
+<h4 id="term-of-art_4">Term of Art<a class="headerlink" href="#term-of-art_4" title="Permanent link">&para;</a></h4>
+<p>Definition: Write here</p>
+<p>Source: Write here and share link</p>
+<p>Interpretation: Write here</p>
+<h4 id="term-of-art_5">Term of Art<a class="headerlink" href="#term-of-art_5" title="Permanent link">&para;</a></h4>
+<p>Definition: Write here</p>
+<p>Source: Write here and share link</p>
+<p>Interpretation: Write here</p>
+<h4 id="term-of-art_6">Term of Art<a class="headerlink" href="#term-of-art_6" title="Permanent link">&para;</a></h4>
+<p>Definition: Write here</p>
+<p>Source: Write here and share link</p>
+<p>Interpretation: Write here</p>
+<h4 id="term-of-art_7">Term of Art<a class="headerlink" href="#term-of-art_7" title="Permanent link">&para;</a></h4>
+<p>Definition: Write here</p>
+<p>Source: Write here and share link</p>
+<p>Interpretation: Write here</p>
+<h4 id="term-of-art_8">Term of Art<a class="headerlink" href="#term-of-art_8" title="Permanent link">&para;</a></h4>
+<p>Definition: Write here</p>
+<p>Source: Write here and share link</p>
+<p>Interpretation: Write here</p>
+<h4 id="term-of-art_9">Term of Art<a class="headerlink" href="#term-of-art_9" title="Permanent link">&para;</a></h4>
+<p>Definition: Write here</p>
+<p>Source: Write here and share link</p>
+<p>Interpretation: Write here</p>
+<h4 id="term-of-art_10">Term of Art<a class="headerlink" href="#term-of-art_10" title="Permanent link">&para;</a></h4>
+<p>Definition: Write here</p>
+<p>Source: Write here and share link</p>
+<p>Interpretation: Write here</p>
+<h4 id="term-of-art_11">Term of Art<a class="headerlink" href="#term-of-art_11" title="Permanent link">&para;</a></h4>
+<p>Definition: Write here</p>
+<p>Source: Write here and share link</p>
+<p>Interpretation: Write here</p>
+<h2 id="reflections-on-data">Reflections on Data<a class="headerlink" href="#reflections-on-data" title="Permanent link">&para;</a></h2>
+<!-- info: Use this space to include any additional information about the
+dataset that has not been captured by the Data Card. For example,
+does the dataset contain data that might be offensive, insulting, threatening,
+or might otherwise cause anxiety? If so, please contact the appropriate parties
+to mitigate any risks. -->
+<h3 id="title">Title<a class="headerlink" href="#title" title="Permanent link">&para;</a></h3>
+<p>Write notes here.</p>
+<h3 id="title_1">Title<a class="headerlink" href="#title_1" title="Permanent link">&para;</a></h3>
+<p>Write notes here.</p>
+<h3 id="title_2">Title<a class="headerlink" href="#title_2" title="Permanent link">&para;</a></h3>
+<p>Write notes here.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>

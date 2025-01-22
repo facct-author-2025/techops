@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Zalando model card template - techops</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Zalando model card template";
+    var mkdocs_page_input_path = "other-templates/zalando-model-card-template.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> techops</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="tocbase current">
+    
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">GETTING STARTED</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../..">Home</a>
+  </li>
+        
+      </ul>
+    </li>
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">TEMPLATES</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../template-application-documentation/">Application Documentation Template</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../template-model-documentation/">Model Documentation Template</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../template-data-documentation/">Data Documentation Template</a>
+  </li>
+        
+      </ul>
+    </li>
+    
+      
+  <li class="navtree toctree-l1 label">
+    <p class="caption">EXAMPLES</p>
+  </li>
+
+
+  
+
+  
+    <li class="navtree toctree-l1 group">
+      <ul class="navtree subnav-l1 current">
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../example-model-documentation-alisnet/">ALiSNet Model Documentation</a>
+  </li>
+        
+          
+
+
+  <li class="navtree toctree-l2 inactive">
+    <a class="" href="../../example-data-documentation-voc-skin-tones/">Skin Tones Data Documentation</a>
+  </li>
+        
+      </ul>
+    </li>
+    
+  </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">techops</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Zalando model card template</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1>Model Name (Acronym)</h1>
+
+<p>Model card contributions and feedback are welcome!</p>
+<h2 id="template-version">Template Version<a class="headerlink" href="#template-version" title="Permanent link">&para;</a></h2>
+<!-- scope: telescope -->
+<!-- info: link to model card version -->
+<p><a href="https://github.bus.zalan.do/aithics/ai-ml-system-documentation-guidelines-and-templates/tags">0.2.1</a></p>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<h4 id="last-update">Last Update<a class="headerlink" href="#last-update" title="Permanent link">&para;</a></h4>
+<!-- info: Remember to add reference to version control document or system. -->
+<p><strong>DD/MM/YY</strong></p>
+<h4 id="model-card-authors">Model Card Author(s)<a class="headerlink" href="#model-card-authors" title="Permanent link">&para;</a></h4>
+<!-- info: Authors should get credit in overview section
+
+Select one or more roles per author and reference author's
+emails to ease communication and add transparency. -->
+
+<ul>
+<li><strong>Name, Team:</strong> (Owner / Contributor / Manager)</li>
+<li><strong>Name, Team:</strong> (Owner / Contributor / Manager)</li>
+<li><strong>Name, Team:</strong> (Owner / Contributor / Manager)</li>
+</ul>
+<h2 id="model-overview">Model Overview<a class="headerlink" href="#model-overview" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Description</li>
+</ul>
+<!-- info: Brief (max 200 words) description of the model architecture and the task(s) it was trained to solve. -->
+
+<h4 id="status">Status<a class="headerlink" href="#status" title="Permanent link">&para;</a></h4>
+<!-- scope: telescope -->
+<!-- info: Select **one:** -->
+<p><strong>Status Date:</strong> DD/MM/YYYY</p>
+<p><strong>Under Preparation</strong> - The model is still under active development
+and is not yet ready for use due to active &ldquo;dev&rdquo; updates.</p>
+<p><strong>Regularly Updated</strong> - New versions of the model
+have been or will continue to be made available.</p>
+<p><strong>Actively Maintained</strong> - No new versions will be made
+available, but this model will
+be actively maintained.</p>
+<p><strong>Limited Maintenance</strong> - The model will not be updated,
+but any technical issues will be
+addressed.</p>
+<p><strong>Deprecated</strong> - This model is obsolete or is
+no longer being maintained.</p>
+<h3 id="developers">Developers<a class="headerlink" href="#developers" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Name, Team</strong></li>
+<li><strong>Name, Team</strong></li>
+</ul>
+<h3 id="owners">Owners<a class="headerlink" href="#owners" title="Permanent link">&para;</a></h3>
+<!-- info: Remember to reference developers and owners emails. -->
+<ul>
+<li><strong>Team Name, Contact Person</strong></li>
+</ul>
+<h3 id="risk-classification">Risk classification<a class="headerlink" href="#risk-classification" title="Permanent link">&para;</a></h3>
+<!-- info: Use the AI Act risk classification criteria found here: http://ai-act.eu/risk.
+Reference assesment document if possible. -->
+<ul>
+<li>High / Limited / Minimal</li>
+</ul>
+<h3 id="version-details-and-artifacts">Version Details and Artifacts<a class="headerlink" href="#version-details-and-artifacts" title="Permanent link">&para;</a></h3>
+<!-- scope: periscope -->
+<!-- info: Provide details about the current model version
+and which model version the current model card corresponds to.
+
+For models without version number, use "Not currently tracked"
+but be sure to track the release date of the model.
+-->
+<p><strong>Current Model Version:</strong> </p>
+<p><strong>Model Version Release Date:</strong> </p>
+<p><strong>Model Version for last Model Card Update:</strong></p>
+<p><strong>Artifacts:</strong></p>
+<ul>
+<li>Model weights (e.g. S3 bucket path)</li>
+<li>Model config (e.g. S3 bucket path)</li>
+</ul>
+<h3 id="github">Github<a class="headerlink" href="#github" title="Permanent link">&para;</a></h3>
+<!-- info: Remember to link repositories. -->
+<ul>
+<li>Repository_1</li>
+<li>Repository_2</li>
+</ul>
+<h3 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h3>
+<p>Example references:</p>
+<ul>
+<li>Paper/Documentation Link</li>
+<li>Initiative Link</li>
+<li>API Link</li>
+</ul>
+<h2 id="intended-use-and-known-applications">Intended Use and Known Applications<a class="headerlink" href="#intended-use-and-known-applications" title="Permanent link">&para;</a></h2>
+<h4 id="intended-use">Intended Use<a class="headerlink" href="#intended-use" title="Permanent link">&para;</a></h4>
+<!-- info: This section focuses on the initial purpose and/or reasoning
+for creating the model.-->
+
+<ul>
+<li>Description</li>
+</ul>
+<h4 id="known-applications">Known Applications<a class="headerlink" href="#known-applications" title="Permanent link">&para;</a></h4>
+<!-- info: Fill out the following section if the model has any
+current known usages.
+-->
+
+<table>
+<thead>
+<tr>
+<th><strong>Application</strong></th>
+<th><strong>Purpose of Model Usage</strong></th>
+<th><strong><a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai">AI Act Risk</a></strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="">Application 1</a></td>
+<td>Foundation model providing customer embeddings for fraud detection scoring</td>
+<td>High</td>
+</tr>
+<tr>
+<td><a href="">Application 2</a></td>
+<td>Customer embeddings used directly as features for recommendation engine</td>
+<td>Limited</td>
+</tr>
+</tbody>
+</table>
+<p>Note, this table may not be exhaustive.  Model users and documentation consumers at large
+are highly encouraged to contribute known usages.</p>
+<h4 id="out-of-scope-uses">Out Of Scope Uses<a class="headerlink" href="#out-of-scope-uses" title="Permanent link">&para;</a></h4>
+<p>Provide potential applications and/or use cases for which use of the model is not suitable.</p>
+<h2 id="risks-and-ethical-considerations">Risks and Ethical Considerations<a class="headerlink" href="#risks-and-ethical-considerations" title="Permanent link">&para;</a></h2>
+<p>This section should cover topics related to known biases, security, privacy and other risks related to use of the model. Please provide an introductory paragraph before listing risks and cosnsiderations. Such introduction should explain
+how the risks / ethical considerations were identified
+and wheter, and if so which, risks teams were involved in identifying the issues and coming up with the mitigation strategies.</p>
+<h4 id="risk-consideration">Risk / Consideration<a class="headerlink" href="#risk-consideration" title="Permanent link">&para;</a></h4>
+<p>Description</p>
+<p><strong>Mitigation strategy</strong>:</p>
+<p>Description</p>
+<h4 id="risk-consideration_1">Risk / Consideration<a class="headerlink" href="#risk-consideration_1" title="Permanent link">&para;</a></h4>
+<p>Description</p>
+<p><strong>Mitigation strategy</strong>:</p>
+<p>Description</p>
+<h2 id="training">Training<a class="headerlink" href="#training" title="Permanent link">&para;</a></h2>
+<!-- info: This section should include overview regarding training process such as training dataset(s), training task (ex. next token prediciton, pixel-wise classification). -->
+
+<h3 id="datasets">Datasets<a class="headerlink" href="#datasets" title="Permanent link">&para;</a></h3>
+<p>Datasets should be compiled in a table with columns and rows:</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Location</th>
+<th>Sensitive*</th>
+<th>Size</th>
+<th>Documentation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>Location (e.g. S3 bucket)</td>
+<td>Yes / No</td>
+<td># of samples</td>
+<td>Link (e.g. Dataset Card)</td>
+</tr>
+</tbody>
+</table>
+<p>(*): Requires a special Data Processing Request</p>
+<h2 id="evaluation">Evaluation<a class="headerlink" href="#evaluation" title="Permanent link">&para;</a></h2>
+<!-- info: Remember to reference metrics definitions and results variance (if available.) -->
+<p>This section should include overview of evaluation process such as evaluation dataset(s), metrics and quantitive results.</p>
+<h3 id="datasets_1">Datasets<a class="headerlink" href="#datasets_1" title="Permanent link">&para;</a></h3>
+<p>Datasets should be compiled in a table with columns and rows:</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Location</th>
+<th>Sensitive*</th>
+<th>Size</th>
+<th>Documentation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>Location (e.g S3 bucket)</td>
+<td>Yes / No</td>
+<td># of samples</td>
+<td>Link (e.g Dataset Card)</td>
+</tr>
+</tbody>
+</table>
+<p>(*): Requires a special Data Processing Request</p>
+<h3 id="quantitive-results">Quantitive Results<a class="headerlink" href="#quantitive-results" title="Permanent link">&para;</a></h3>
+<!-- info: Please provide rationales for selected metrics.  -->
+<ul>
+<li>Dataset:
+    * <strong>Metric: Result</strong>
+    * <strong>Metric: Result</strong></li>
+</ul>
+<ul>
+<li>Dataset:
+    * <strong>Metric: Result</strong>
+    * <strong>Metric: Result</strong></li>
+</ul>
+<h2 id="caveats-and-recommendations">Caveats and Recommendations<a class="headerlink" href="#caveats-and-recommendations" title="Permanent link">&para;</a></h2>
+<p>This section should cover shortcomings and recommendations related to current approach such as:</p>
+<ul>
+<li>scalability</li>
+<li>robustness</li>
+<li>deployment safety and readiness</li>
+<li>training / evaluation data</li>
+</ul>
+<p>Additionaly plans or ideas for future work could be discussed (e.g. incorporate new data source or use a bigger model).</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>
