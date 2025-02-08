@@ -81,7 +81,17 @@
     
       
         <li class="toctree-l3">
-          <a class="toctree-l4" href="#introduction">Introduction</a>
+          <a class="toctree-l4" href="#techops-introduction">TechOps Introduction</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#templates">Templates</a>
+        </li>
+    
+      
+        <li class="toctree-l3">
+          <a class="toctree-l4" href="#examples">Examples</a>
         </li>
     
       
@@ -198,9 +208,66 @@
             <div class="section">
               
                 <h1 id="home">Home<a class="headerlink" href="#home" title="Permanent link">&para;</a></h1>
-<p>Welcome!</p>
-<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<h2 id="techops-introduction">TechOps Introduction<a class="headerlink" href="#techops-introduction" title="Permanent link">&para;</a></h2>
+<p>Welcome! This is the website contains rendered versions of AI documentation templates and examples
+from the paper &ldquo;TechOps: Technical Documentation Templates for the AI Act&rdquo;, under review for FAccT 2025.
+We recommend developing documentation with the help of such rendering as it helps all actors (developers, deployers,
+users, etc.) more easily view documentation details while maintaining view of the big picture.</p>
+<p>These templates and examples are not to be used before publication and serve, for the moment, only to demonstrate the work described in the paper. All rights reserved.</p>
+<h2 id="templates">Templates<a class="headerlink" href="#templates" title="Permanent link">&para;</a></h2>
+<p>TechOps are three separate templates for sufficiently documenting AI systems for proof of compliance with the AI Act.
+The documentation is split into three levels:</p>
+<ul>
+<li>AI System documentation</li>
+<li>Model documentation</li>
+<li>Data documentation</li>
+</ul>
+<p>to allow the owners of data, models, and AI systems to each maintain ownership of their own level of documentation.<br />
+Thus, model and dataset owners whom may or may not have curated their models and datasets with a specific AI Systems in 
+mind, may still create documentation contributions that the AI System documentation can reference.</p>
+<p>These templates are meant to guide responsible stakeholders to document AI systems across various fields. 
+Unlike existing lengthy and abstract questionnaires, these templates offer clear guidance for the documentation of the 
+relevant processes across the AI lifecycle, translating complex requirements such as fairness and data governance 
+into actionable metrics and measurable criteria that can be implemented and tracked. 
+This process ensures that the abstract legal requirements of the AI Act are operationalized into concrete actions, 
+making them manageable and measurable.</p>
+<p>Following the TechOps approach also provides stakeholders comprehensive oversight on the data, model and application lifecycle. These templates track the system’s status over the 
+entire AI lifecycle, ensuring traceability, reproducibility, in addition to compliance with the AI Act. </p>
+<p>Clear documentation also promotes discoverability, collaboration, and risk assessment.</p>
+<h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
+<p>The templates are tested on real-world scenarios providing examples that further guide their implementation:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="example-data-documentation-voc-skin-tones/">Model Documentation Example</a></td>
+<td>The model template is followed to document a neural network for segmenting human silhouettes in photos</td>
+</tr>
+<tr>
+<td><a href="example-data-documentation-alisnet/">Data Documentation Example</a></td>
+<td>The data template is followed to document a skin tones dataset created to support fairness evaluations of downstream computer vision models and human centric applications</td>
+</tr>
+</tbody>
+</table>
 <h2 id="how-to-use">How To Use<a class="headerlink" href="#how-to-use" title="Permanent link">&para;</a></h2>
+<p>The approach is to choose which of the templates need to be filled.  For example, if you are responsible for an
+AI System and have trained your own models based on custom datasets that have not been documented, you
+may need to work at all three documentation levels (AI System, model, and data).</p>
+<p>We, the TechOps developers, advise that documentation authors use the templates as best suites their needs given
+documentation standards that already exist in your context. One example of how to use the templates would be,</p>
+<ol>
+<li>Create a GitHub Repo for your documentation.</li>
+<li>Take the template(s) markdown file you wish to implement (see <a href="https://github.com/facct-author-2025/techops">our GitHub Repo</a>) 
+   and implement them with the help of the template comments and <a href="#examples">examples</a>.</li>
+<li>Render your documentation to make it easy to read, similar to how the examples are rendered on this website
+   (you can use <a href="https://github.com/facct-author-2025/techops">our GitHub Repo</a> as an example for how to render using 
+   <a href="https://www.mkdocs.org/">mkdocs</a>).</li>
+</ol>
               
             </div>
           </div>
